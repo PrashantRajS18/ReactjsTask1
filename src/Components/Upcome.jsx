@@ -24,7 +24,7 @@ function Upcome(props) {
     <div ref={ref} className=' mt-40 flexupcome  '>
        
        {Carouseldata8.map((item)=>{
-        return<div className='upcome flex'>
+        return<div className='upcome flex boxshdw2'>
              <div> 
                  <img src={item.src}   className='Cardeditor' width={item.width} height={props.height} alt = "cardimg" />
              </div>

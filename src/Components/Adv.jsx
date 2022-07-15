@@ -32,7 +32,7 @@ function Adv(props) {
           
         </div>
         <div className='col-1 mt-50'>
-        <hr className='vrt2'></hr>
+        <hr className='vrt2' style ={{marginLeft: "64px"}}></hr>
         </div>
         <div className='col-3 mt-40 mb-20'>
         <h1>
