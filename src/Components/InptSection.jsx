@@ -12,9 +12,10 @@ function InptSection() {
     <><div className='container'>
     <hr className='hr mt-50' ></hr>
     </div>
-        <div className='container' style={{background:"#000000",borderRadius:"14px"}}> 
+    <div className='container'>
+        <div className='' style={{background:"#000000",borderRadius:"14px"}}> 
           <div className='row'>
-          <div className='col-2 flex2 '>
+          <div className='col-1 flex2 '>
           <div className='enve'>
             <img src ={evelope} alt ="envelope" />
           </div>
@@ -44,6 +45,7 @@ function InptSection() {
           </div>
 
           </div>
+        </div>
         </div>
     </>
   )

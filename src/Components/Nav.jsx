@@ -15,7 +15,7 @@ const Nav = ()=>{
             </div>
                 <a href='/' ><img src={logo} width ="60%" alt="logo img"/></a>
             </div>
-            <ul>
+            <ul className='navflx'>
                 <li className='hide' ><a href='/' ><img src={search} alt = "search" /> Search</a></li>
                 <li  ><a href='/' ><img src={crown} alt = "search" /> Subscribe</a></li>
                 <li className='hide'><a href='/' > <img src={user} alt = "search" /> Sign in</a></li>

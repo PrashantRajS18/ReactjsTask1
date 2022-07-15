@@ -58,8 +58,9 @@ function Stories() {
      <Cardflex2  src ={stories4}
      width = "100%"
      className = "editorcards"
+    
             title = "TMT"
-            body = "Kotak’s asset arm, others lead $6 mn bet on cancer detection platform Epigeneres"
+            body = "RPSG Capital Ventures to raise Rs 500 cr for consumer-focused fund"
           />
      </div>
      </div>

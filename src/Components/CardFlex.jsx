@@ -36,15 +36,15 @@ function CardFlex() {
     </div>
     <div className='col-3 postion'>
     <Cards 
-    className = "cardflx"
+    className = "cardflx "
          src = {Cardimg3}
          width= "100%"
          title = "CONSUMER"
-         body = "Exclusive: PE-backed sauce maker Wingreens acquires Lok Capital-backed cereal maker"
+         body = "Exclusive:PE-backed sauce maker Wingreen Capital-backed cereal maker"
         />
-        <Premium 
-          className ="Montbold Premiumtag hide"
-         />
+          {/* <Premium
+        className ="Montbold Premiumtag"
+         /> */}
     </div>
     <div className='col-3 '>
     <Cards 

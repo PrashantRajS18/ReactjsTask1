@@ -28,6 +28,10 @@
   [class*="col-"] {
     width: 100%;
   }
+  .col-2{
+    width: 0%;
+    display: none;
+  }
   .sec1{
     flex-wrap: wrap-reverse;
   }
@@ -97,6 +101,9 @@
   padding-left: 0;
  }
  .mt-50 ,.mt-40{
+  margin-top: 0px;
+ }
+ .cardul{
   margin-top: 0px;
  }
  .flex2{
@@ -185,10 +192,12 @@ text-align: center;
   }
 
 }
+
 @media only screen and (max-width: 480px){
   .cardbody{
     font-size: 12px;
   }
+
   .sec1img1 {
     width: 100%;
 }
@@ -202,7 +211,7 @@ text-align: center;
   }
   .Premiumtag1-3{
     top: 54%;
-    left: 19%;
+    left: 18%;
   }
   .Premiumtag1{
     top:58%;
@@ -223,5 +232,17 @@ text-align: center;
   .Cardeditor{
     /* width: 100%; */
    }
+   .consumer{
+   /* font-Size :10px; */
+   }
   
+}
+@media only screen and (max-width : 360px){
+  .flex2 {
+   flex-wrap: nowrap;
+    align-items: center;
+}
+.navflx{
+  font-size: smaller;
+}
 }
