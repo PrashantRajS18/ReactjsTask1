@@ -10,7 +10,7 @@ const Section1 = ()=>{
                     <p className="MontReg" style={{marginTop : "20px"}}>Private equity firm TPG, which is reportedly heading towards a public listing,
                      said on Thursday it had appointed long-time company executive Todd Sisitsky as president,
                       effective immediately.</p>
-                      <ul className = "MontMed">
+                      <ul className = "MontMed cardulsec1">
                       <li>30 September</li>
                         <li>Madhurima Nandy</li>
                       </ul>

@@ -7,7 +7,7 @@ const Nav = ()=>{
     return(
         <><header className='container'>
             <nav className="navbar Mont">
-            <div className='flex2 '>
+            <div className='flexnav '>
             <div  >
             <div  className='burger'></div>
             <div  className='burger'></div>

@@ -152,6 +152,13 @@ text-align: center;
 .crdbdy{
   margin-left: 15px;
 }
+.adv3{
+  margin-top: 20px;
+}
+.center {
+  text-align: center;
+  padding: 0px;
+}
 }
 /* @media only screen and (max-width: 780px){
 .sec1img1 {
@@ -195,6 +202,10 @@ text-align: center;
 .sec1img1 {
   /* width: 133%; */
 }
+.center {
+  text-align: center;
+  padding: 0px;
+}
   .Cardimg{
    width:  100%;
   }
@@ -209,7 +220,10 @@ text-align: center;
   .cardbody{
     font-size: 12px;
   }
-
+  .center {
+    text-align: center;
+    padding: 0px;
+  }
   .sec1img1 {
     width: 100%;
 }
@@ -254,11 +268,52 @@ text-align: center;
    flex-wrap: wrap;
     align-items: center;
 }
+.center {
+  text-align: center;
+  padding: 0px;
+}
+.flexnav{
+  flex-wrap: nowrap;
+}
 .navflx{
   font-size: smaller;
 }
 .flexupcome {
   grid-auto-flow: column;
   grid-auto-columns: 100%;
+}
+.cardul ,.carduled{
+  font-size: 7px;
+}
+.cardulsec1{
+  font-size: 14px;
+}
+.Premiumtag1-3{
+  width: 47px;
+  font-size: 7px;
+}
+.PremiumtagVcc{
+  top: 26% ;
+  left: 59%;
+}
+.Premiumtag1-2{
+  top: 61%;
+  left: 20%;
+}
+.Premiumtag1{
+  top:58%;
+  left : 80%;
+}
+.Premiumtag1-1 {
+  top: 50%;
+  left: 80%;
+}
+.premium{
+  top: 50%;
+  left: 18%;
+}
+.Premiumtag{
+  top: 50%;
+  left: 17%;
 }
 }
