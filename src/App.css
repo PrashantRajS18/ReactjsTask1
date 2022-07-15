@@ -485,7 +485,7 @@ scroll-behavior: smooth;
 .flexupcome{
   display: grid;
   grid-auto-flow: column;
- grid-auto-columns: 32%;
+ grid-auto-columns: 39%;
   overflow-x: auto;
   scroll-behavior: smooth;
    scrollbar-width: none;

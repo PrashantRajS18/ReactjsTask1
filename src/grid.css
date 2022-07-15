@@ -37,6 +37,10 @@
 .boxshdw{
   box-shadow: 0px 5px 10px #0c0c0c42;
 }
+.boxshdw2{
+  box-shadow: 0px 5px 10px #0c0c0c42;
+  border-radius: 8px;
+}
 .sec1img1 {
   width: 133%;
 }
