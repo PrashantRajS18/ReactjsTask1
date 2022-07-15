@@ -75,6 +75,7 @@ opacity: 1;
 .sec1{
   display: flex;
   justify-content: space-between;
+  padding : 10px;
   margin-top: 50px;
   flex-wrap: nowrap;
 }
@@ -189,6 +190,9 @@ opacity: 1;
 }
 .mt-40{
   margin-top: 40px;
+}
+.mt-30{
+  margin-top: 30px;
 }
 .mb-20{
 margin-bottom: 40px;
@@ -455,6 +459,7 @@ padding: 20px;
 .slideflex{
   display: flex;
   flex-wrap: nowrap;
+  padding: 8px;
   /* z-index: 2; */
   justify-content: space-between;
   margin-top: 40px;

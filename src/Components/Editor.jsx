@@ -24,7 +24,7 @@ function Editor() {
           />
            <Premium className="Montbold Premiumtag1-1" />
           </div>
-
+          <hr className ="hr mt-30"></hr>
          </div>
          <div className='col-4 mt-50 '>
          
