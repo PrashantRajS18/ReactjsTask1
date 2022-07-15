@@ -34,7 +34,10 @@ function Adv(props) {
         <div className='col-1 mt-50'>
         <hr className='vrt2' style ={{marginLeft: "64px"}}></hr>
         </div>
-        <div className='col-3 mt-40 mb-20'>
+        <div className='col-3 mt-40 mb-20 postion'>
+        <div className='socialicon'>
+        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+        </div>
         <h1>
         Infographic
         </h1>

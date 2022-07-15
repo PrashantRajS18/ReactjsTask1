@@ -77,8 +77,8 @@
 }
 .PremiumtagVcc {
   position: absolute;
-  top: 50%;
-  left: 84%;
+  top: 25%;
+  left: 68%;
 }
  .premium{
   top: 62%;
@@ -89,7 +89,7 @@
   width: 100%;
  }
  .mediascroller{
-  grid-auto-columns: 60%;
+  grid-auto-columns: 28%;
  }
  .editorcardsh{
   display: none;
@@ -128,9 +128,7 @@ text-align: center;
  .enve{
   padding-left: 0px;
  }
- .relate ,.relate2 ,.relateryt ,.relateryt2 ,.relateryt3{
-  display: none;
- }
+
  .cardflx{
   display: flex;
  }
@@ -147,7 +145,7 @@ text-align: center;
 }
 .Premiumtag1-3{
   top: 64%;
-  left: 20%;
+  left: 17%;
 }
 .crdbdy{
   margin-left: 15px;
@@ -158,6 +156,13 @@ text-align: center;
 .center {
   text-align: center;
   padding: 0px;
+}
+.fz{
+  font-size: 22px;
+}
+.socialicon{
+  left: 90%;
+  top:90%;
 }
 }
 /* @media only screen and (max-width: 780px){
@@ -176,9 +181,22 @@ text-align: center;
   top: 55%;
   left: 15%;
 }
+.sec1img1 {
+  width: 130%;
+}
+.mediascroller{
+  grid-auto-columns: 60%;
+ }
+ .relate ,.relate2 ,.relateryt ,.relateryt2 ,.relateryt3{
+  display: none;
+ }
 .Premiumtag1-1 {
   top: 61%;
   left: 82%;
+}
+.PremiumtagVcc{
+  top: 50% ;
+  left: 82% ;
 }
 .Premiumtag1-2{
   top: 50% ;
@@ -186,14 +204,14 @@ text-align: center;
 }
 .Premiumtag1-3{
   top: 62%;
-  left: 22%;
+  left: 15%;
 }
 .container {
   padding-left: 5px  !important;
   padding-right: 5px !important;
 }
 .sec1img1{
-  width: 100%;
+  /* width: 100%; */
   }
   
   .sec1img {
@@ -216,8 +234,21 @@ text-align: center;
 
 }
 
+@media only screen and (max-width : 700px){
+  .sec1img1 {
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 480px){
   .cardbody{
+    font-size: 12px;
+  }
+  .socialicon{
+    left: 70%;
+    top:80%;
+  }
+  .fz{
     font-size: 12px;
   }
   .center {
@@ -268,6 +299,9 @@ text-align: center;
    flex-wrap: wrap;
     align-items: center;
 }
+.fz{
+  font-size: 9px;
+}
 .center {
   text-align: center;
   padding: 0px;
@@ -284,6 +318,13 @@ text-align: center;
 }
 .cardul ,.carduled{
   font-size: 7px;
+}
+
+.editorcards .cardbody{
+  font-size: 8px;
+}
+.cardbody{
+  font-size: 9px;
 }
 .cardulsec1{
   font-size: 14px;
