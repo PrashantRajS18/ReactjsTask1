@@ -15,7 +15,7 @@ const Section1 = ()=>{
                         <li>Madhurima Nandy</li>
                       </ul>
                       <div>
-                      <button className="buttonSec1 Montbold" width = "100%" style={{marginTop : "10px"}}><a href = "/" style={{color:"#FFFFFF"}}>READ MORE</a></button>
+                      <button className="buttonSec1 Montbold hide" width = "100%" style={{marginTop : "10px"}}><a href = "/" style={{color:"#FFFFFF"}}>READ MORE</a></button>
                       </div>
                 </div>
                 <div className='sec1img'>

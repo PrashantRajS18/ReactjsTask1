@@ -153,6 +153,17 @@ text-align: center;
   margin-left: 15px;
 }
 }
+/* @media only screen and (max-width: 780px){
+.sec1img1 {
+    width: 110%;
+}
+} */
+/* @media only screen and (max-width: 540px){
+  .sec1img1 {
+      width: 100%;
+  }
+  } */
+
 @media only screen and (max-width: 780px){
 .Premiumtag {
   top: 55%;
@@ -177,11 +188,12 @@ text-align: center;
 .sec1img1{
   width: 100%;
   }
+  
   .sec1img {
     margin: 0px;
 }
 .sec1img1 {
-  width: 133%;
+  /* width: 133%; */
 }
   .Cardimg{
    width:  100%;
@@ -239,10 +251,14 @@ text-align: center;
 }
 @media only screen and (max-width : 360px){
   .flex2 {
-   flex-wrap: nowrap;
+   flex-wrap: wrap;
     align-items: center;
 }
 .navflx{
   font-size: smaller;
+}
+.flexupcome {
+  grid-auto-flow: column;
+  grid-auto-columns: 100%;
 }
 }
