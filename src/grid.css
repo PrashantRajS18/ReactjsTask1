@@ -175,6 +175,9 @@ text-align: center;
 .navbar li{
   padding: 0rem;
 }
+.navflx2{
+  display: none;
+}
 }
 
 /* @media only screen and (max-width: 780px){
@@ -251,6 +254,7 @@ text-align: center;
     grid-auto-flow: column;
     grid-auto-columns: 80%;
   }
+
 
 }
 

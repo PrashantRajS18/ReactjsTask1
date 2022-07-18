@@ -12,7 +12,11 @@ padding: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px;
   overflow: hidden;
+}
+.navbarresp{
+  display: block;
 }
 .burger {
   width: 35px;
@@ -569,8 +573,8 @@ scroll-behavior: smooth;
   z-index: 1;
   /* opacity: .8; */
   /* filter: blur(5px); */
-  background: transparent; 
-   background: linear-gradient(to left, rgb(2 0 0), rgb(171 135 135 / 18%));
+ 
+   background:   transparent linear-gradient(90deg, #FFFFFF41 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
 }
 .blrrelate2 {
   position: absolute;
@@ -591,6 +595,7 @@ scroll-behavior: smooth;
   position: absolute;
   top: 80%;
   left: 70%;
+  opacity : .8;
   border-radius: 10px;
   background-color: #f0f0f0;
   padding: 15px;
@@ -610,9 +615,42 @@ scroll-behavior: smooth;
   .menu{
     list-style: none;
     cursor: pointer;
-    text-align: center;
+    /* text-align: center; */
   } 
   .menu li{
     padding: 10px;
+    border-bottom:1px solid #E3E3E3; 
   }
+.menuli:hover{
+  background-color:  #096FFA;
+}
 
+.subs{
+  visibility: hidden;
+}
+.flexnavsub{
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+}
+.sub{
+  color: #F83900;
+}
+.sub:hover{
+  background-color: #F83900;
+}
+.barshide{
+  display: none;
+}
+.menulist:hover{
+  background-color: #096FFA;
+}
+.crosclose{
+  display: none;
+}
+.logo{
+  /* display: flex; */
+  /* align-items: center; */
+  text-align: center;
+  padding: 5px;
+}
