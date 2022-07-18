@@ -475,7 +475,7 @@ padding: 20px;
   background: #FAFAFA ;
   border: 1px solid #EDEDED;
   /* padding: 10px; */
-  border-radius: 8px;
+  border-radius: 15px;
   opacity: 1;
 }
 .buttonVcc{
@@ -560,31 +560,31 @@ scroll-behavior: smooth;
 }
 .blrrelate{
   position: absolute;
-  top: 23%;
-  left: 79%;
+  top: 28%;
+  left: 80%;
   /* border: 2px solid black; */
-  height: 285px;
+  height: 260px;
   width: 200px;
   border-radius: 8px;
   z-index: 1;
   /* opacity: .8; */
   /* filter: blur(5px); */
-  background: transparent;
-  background: linear-gradient(to left, #e7e7e714, rgba(0, 0, 0, 0.664));
+  background: transparent; 
+   background: linear-gradient(to left, rgb(2 0 0), rgb(171 135 135 / 18%));
 }
-.blrrelate2{
+.blrrelate2 {
   position: absolute;
-  top: 20%;
-  left: 79%;
+  top: 19%;
+  left: 77%;
   /* border: 2px solid black; */
-  height: 325px;
-  width: 200px;
+  height: 328px;
+  width: 241px;
   border-radius: 8px;
   z-index: 1;
   /* opacity: .8; */
   /* filter: blur(5px); */
   background: transparent;
-  background: linear-gradient(to left, #e7e7e714, rgba(0, 0, 0, 0.664));
+  background: linear-gradient(to left, rgb(2 0 0), rgb(171 135 135 / 18%));
 }
 
 .socialicon{
@@ -596,7 +596,6 @@ scroll-behavior: smooth;
   padding: 15px;
   width: 50px;
 }
-<<<<<<< HEAD
 .hamburger{
    /* padding: 5px 5px; */
   font-size: 25px;
@@ -616,5 +615,4 @@ scroll-behavior: smooth;
   .menu li{
     padding: 10px;
   }
-=======
->>>>>>> 13e34292c829fd8a4331435e9657a9a0b3deab0c
+

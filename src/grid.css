@@ -205,7 +205,7 @@ text-align: center;
   width: 130%;
 }
 .mediascroller{
-  grid-auto-columns: 54%;
+  grid-auto-columns: 60%;
  }
  .relate ,.relate2 ,.relateryt ,.relateryt2 ,.relateryt3{
   display: none;
@@ -249,7 +249,7 @@ text-align: center;
   }
   .flexupcome{
     grid-auto-flow: column;
-    grid-auto-columns: 62%;
+    grid-auto-columns: 80%;
   }
 
 }

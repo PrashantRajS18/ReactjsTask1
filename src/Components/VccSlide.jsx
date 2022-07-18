@@ -25,11 +25,11 @@ function VccSlide(props) {
     <div className={props.className}></div>
           <div ref={ref} className=' mediascroller'>
           <div className='relate'>
-    <button  onClick={() => scroll(200)} className='round'><img src='../imgs/slideicon.png' alt='icon' /></button>
+    <button  onClick={() => scroll(300)} className='round'><img src='../imgs/slideicon.png' alt='icon' /></button>
     </div>
-    <div className='relateryt2'>
-    <button  onClick={() => scroll(-200)} className='round'><img src='../imgs/slideicon.png' className='sIcon' alt='icon' /></button>
-    </div>
+    {/* <div className='relateryt2'>
+    <button  onClick={() => scroll(-300)} className='round'><img src='../imgs/slideicon.png' className='sIcon' alt='icon' /></button>
+    </div> */}
             {Carouseldata7.map((item)=>
             {
              return <div className='VccCard postion'>

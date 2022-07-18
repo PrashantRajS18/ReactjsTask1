@@ -15,9 +15,9 @@ function Slider1(props ) {
     <div className='relate'>
     <button  onClick={() => scroll(290)} className='round'><img src='../imgs/slideicon.png' alt='icon' /></button>
     </div>
-    <div className='relateryt'>
+    {/* <div className='relateryt'>
     <button  onClick={() => scroll(-280)} className='round'><img src='../imgs/slideicon.png' className='sIcon' alt='icon' /></button>
-    </div>
+    </div> */}
     <div className='slideflex'>
     <h1 className='Mont mt-40' >{props.maintitle}</h1>
     <p className='MontMed mt-40'>View More <img src='../imgs/rytarow.png' alt='arrow' /> </p>
