@@ -309,25 +309,8 @@ const Carouseldata8 =[
         title :"FUTURE OF TRUST",
         body :"Hyatt Regency, New Delhi | New Hybrid Masterclass.",
         
-    },
-    {
-        src :"./imgs/slide8.1.png",
-        title :"Limited Partners Summit 2022",
-        body :"Hyatt Regency, New Delhi | New Hybrid Masterclass.",
-        
-    },
-    {
-        src :"../imgs/slide8.2.png",
-        title :"Cloud- The Digital Infrastructure",
-        body :"Hyatt Regency, New Delhi | New Hybrid Masterclass.",
-        
-    },
-    {
-        src :"../imgs/slide8.3.png",
-        title :"FUTURE OF TRUST",
-        body :"Hyatt Regency, New Delhi | New Hybrid Masterclass.",
-        
-    },
+    }
+  
 ]
 
 export {Carouseldata,Carouseldata2,Carouseldata3,Carouseldata4,Carouseldata5,Carouseldata6,Carouseldata7,Carouseldata8};

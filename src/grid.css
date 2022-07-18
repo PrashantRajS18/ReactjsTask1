@@ -169,13 +169,17 @@ text-align: center;
   display: none;
 }
 .mobmenu{
-  display: block
+  display: block;
+ 
 
 }
 .navbar li{
   padding: 0rem;
 }
 .navflx2{
+  display: none;
+}
+.relate2{
   display: none;
 }
 }
@@ -197,6 +201,9 @@ text-align: center;
     }
     .flexupcome{
       grid-auto-columns: 50% ;
+    }
+    .relate2{
+      display: none;
     }
   }
 @media only screen and (max-width: 780px){
@@ -250,9 +257,10 @@ text-align: center;
   .Cardimg{
    width:  100%;
   }
-  .flexupcome{
-    grid-auto-flow: column;
-    grid-auto-columns: 80%;
+  .flexupcome {
+    grid-auto-flow: row;
+    justify-content: center;
+    grid-auto-columns: 100%;
   }
 
 
@@ -268,6 +276,11 @@ text-align: center;
   [class*="col-"] {
     width: 100%;
     padding: 5px;
+  }
+  .flexupcome{
+    grid-auto-flow: row;
+    justify-content: center;
+    grid-auto-columns: 100%;
   }
   .cardbody{
     font-size: 12px;
@@ -341,7 +354,8 @@ text-align: center;
   font-size: smaller;
 }
 .flexupcome {
-  grid-auto-flow: column;
+  grid-auto-flow: row;
+  justify-content: center;
   grid-auto-columns: 100%;
 }
 .cardul ,.carduled{
