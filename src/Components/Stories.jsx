@@ -89,7 +89,7 @@ function Stories() {
  <Adv className="adv1 hide" src ={Adv2} width = "80%" />
  <div className='container'>
      <div className='row'>
-     <div className='col-6 hide'>
+     <div className='col-6 '>
      <Cardflex2  src ={stories7}
      width = "100%"
      className = "editorcardsh"

@@ -574,7 +574,7 @@ scroll-behavior: smooth;
 }
 .blrrelate2{
   position: absolute;
-  top: 16%;
+  top: 20%;
   left: 79%;
   /* border: 2px solid black; */
   height: 325px;
@@ -596,6 +596,7 @@ scroll-behavior: smooth;
   padding: 15px;
   width: 50px;
 }
+<<<<<<< HEAD
 .hamburger{
    /* padding: 5px 5px; */
   font-size: 25px;
@@ -615,3 +616,5 @@ scroll-behavior: smooth;
   .menu li{
     padding: 10px;
   }
+=======
+>>>>>>> 13e34292c829fd8a4331435e9657a9a0b3deab0c
