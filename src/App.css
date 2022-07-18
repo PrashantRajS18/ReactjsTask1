@@ -18,7 +18,7 @@ padding: 0;
   width: 35px;
   height: 5px;
   background-color: black;
-  display: none;
+  /* display: none; */
   margin: 6px 6px;
 }
 .navbar li{
@@ -314,6 +314,7 @@ opacity: 1;
 .flexnav{
   display: flex;
   align-items: center;
+  padding: 5px;
 }
 .enve{
   /* padding-left: 90px; */
@@ -595,3 +596,22 @@ scroll-behavior: smooth;
   padding: 15px;
   width: 50px;
 }
+.hamburger{
+   /* padding: 5px 5px; */
+  font-size: 25px;
+  
+}
+.hidemenu{
+  display: none;
+}
+.mobmenu{
+  display: none;
+}
+  .menu{
+    list-style: none;
+    cursor: pointer;
+    text-align: center;
+  } 
+  .menu li{
+    padding: 10px;
+  }

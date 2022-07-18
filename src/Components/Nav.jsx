@@ -3,21 +3,34 @@ import search from '../imgs/magnifying-glass.png'
 import user from '../imgs/user.svg';
 import crown from '../imgs/crown.png'
 import down from '../imgs/downarrow.png'
+import { useState } from 'react';
 const Nav = ()=>{
+    const [menu,setMenu] = useState(false)
+
+    const show = (event) => {
+        event.preventDefault();
+        setMenu(!menu);
+    }
+
+    
     return(
         <><header className='container'>
             <nav className="navbar Mont">
             <div className='flexnav '>
-            <div  >
-            <div  className='burger'></div>
-            <div  className='burger'></div>
-            <div  className='burger'></div>
+            <div >
+            <div className='none hamburger' >
+           <a href="/" type='button' onClick={show}>
+           <i class="fa-solid fa-bars"></i></a>
             </div>
-                <a href='/' ><img src={logo} width ="60%" alt="logo img"/></a>
+            </div>
+                <a href='/'><img src={logo} width ="60%" alt="logo img"/></a>
+            </div>
+            <div>
+
             </div>
             <ul className='navflx'>
                 <li className='hide' ><a href='/' ><img src={search} alt = "search" /> Search</a></li>
-                <li  ><a href='/' ><img src={crown} alt = "search" /> Subscribe</a></li>
+                <li   className="subs"  ><a href='/' ><img src={crown} alt = "search" /> Subscribe</a></li>
                 <li className='hide'><a href='/' > <img src={user} alt = "search" /> Sign in</a></li>
             </ul>
             
@@ -36,7 +49,35 @@ const Nav = ()=>{
               <li className='li'><a href='/' >Customize <img src = {down} alt = "arrow" /></a></li>
             </ul>
             </subnav>
+            
+            <div className={menu ? "mobmenu" : "hidemenu"} >
+              <ul className='menu' >
+                <li>
+                    <a href='/'>Home</a>
+                </li>
+                <li>
+                    <a href='/'>Sign-in</a>
+                </li>
+                <li>
+                <a href='/' ><img src={crown} alt = "search" /> Subscribe</a>
+                </li>
+                <li><a href='/' >Private Equity</a></li>
+                <li><a href='/' >Venture Capital</a></li>
+                <li><a href='/' >M&A</a></li>
+                <li><a href='/' >Industry <img src = {down} alt = "arrow" /></a></li>
+                <li><a href='/' >Stressed Assests</a></li>
+                <li><a href='/' >Limited Partner</a></li>
+                <li><a href='/' >founder</a></li>
+                <li><a href='/' >About Us</a></li>
+                <li><a href='/' >Tag Listing</a></li>
+                <li><a href='/' >Advertise With us</a></li>
+                <li><a href='/' >Contact Us</a></li>
+                <li><a href='/' >VCC Mobile App</a></li>
+              </ul>
+            </div>
             </header>
+            
+
         </>
     )
 }
