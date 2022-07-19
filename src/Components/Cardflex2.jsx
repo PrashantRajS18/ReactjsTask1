@@ -12,7 +12,7 @@ function Cardflex2(props) {
         <div className='cardtitle  p-20' style={{marginTop :"5px"}}>
         <a href="/" style={{color:"#096FFA"}} className="Montbold">{props.title}</a>
         </div>
-        <div className='cardbody mt-10 p-20 MontMed'>
+        <div className='cardbody cardpara mt-10 p-20 MontMed'>
          <p className='fz'>{props.body}</p>
         </div>
         <ul className = " carduled mt-10 p-20 MontMed ">

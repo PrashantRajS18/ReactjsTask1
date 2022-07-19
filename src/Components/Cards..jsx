@@ -13,7 +13,7 @@ function Cards(props) {
         <div className='cardtitle'>
         <a href="/" style={{color:"#096FFA"}} className="Montbold">{props.title}</a>
         </div>
-        <div className='cardbody MontMed'>
+        <div className='cardbody cardpara MontMed'>
          <p>{props.body}</p>
         </div>
         <ul className = " cardul MontMed ">
