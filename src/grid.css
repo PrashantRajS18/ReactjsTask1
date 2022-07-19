@@ -211,7 +211,7 @@ text-align: center;
 
   @media only screen and (max-width: 920px) {
     .mediascroller{
-      grid-auto-columns: 36%; 
+      grid-auto-columns: 45%; 
     }
     .flexupcome{
       grid-auto-columns: 50% ;
