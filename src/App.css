@@ -184,7 +184,7 @@ margin-right: 40px;
 }
 .cardbody{
   /* margin-top: 20px; */
-  /* font-size: 12px; */
+  font-size: 12px;
 }
 .editorcards{
   display: flex;
@@ -618,7 +618,7 @@ scroll-behavior: smooth;
 }
 .blrrelate2 {
   position: absolute;
-  top: 19%;
+  top: 18%;
   left: 72%;
   /* border: 2px solid black; */
   height: 328px;
