@@ -9,6 +9,7 @@ const Nav = () => {
 
   const show = (event) => {
     event.preventDefault();
+    document.body.classList.toggle('lock-scroll');
     setMenu(!menu);
   };
 	const prevent = (e)=>{
@@ -17,8 +18,8 @@ const Nav = () => {
 
   return (
     <>
-      <header className="container">
-        <nav className={menu ? " navbarresp Mont" : "navbar Mont"}>
+      <header className="containernav">
+        <nav className={menu ? "navbarresp Mont" : "navbar Mont"}>
           <div className={menu ? "flexnavsub" : "flexnav"}>
             <div>
               <div className="none hamburger">
