@@ -24,7 +24,7 @@ function App() {
    <>
 <Nav />
 <hr className='hr boxshdw' style={{marginTop:"10px"}}></hr>
-<Adv className ="adv1  hide" src ={Adv1} width = "90%"/>
+<Adv className ="adv2  hide" src ={Adv1} width = "90%"/>
 <Section1/>
 <Adv className ="adv3 none "  src ={Adv3} width = "80%" />
 <CardFlex />

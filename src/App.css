@@ -86,10 +86,15 @@ a{
   color: #222222;
 }
 .adv1{
-  margin-top: 150px;
+  margin-top: 15px;
   background: #F0F0F0 0% 0% no-repeat padding-box;
 opacity: 1;
 
+}
+.adv2{
+    margin-top: 150px;
+    background: #F0F0F0 0% 0% no-repeat padding-box;
+    opacity: 1;
 }
 .cross{
   padding: 8px;
@@ -640,6 +645,9 @@ scroll-behavior: smooth;
 }
 .hidemenu{
   display: none;
+}
+.visible{
+  visibility: hidden;
 }
 .mobmenu{
   display: none;

@@ -85,6 +85,16 @@ function Stories() {
          />
      </div>
      </div>
+     <div className='row none'>
+     <div className='col-6 '>
+     <Cardflex2  src ={stories7}
+     width = "100%"
+     className = "editorcards"
+            title = "CONSUMER"
+            body = "Actor Tiger Shroff, BharatPe’s Ashneer Grover, others back Freadom"
+          />
+     </div>
+     </div>
  </div>
  <Adv className="adv1 hide" src ={Adv2} width = "80%" />
  <div className='container'>
