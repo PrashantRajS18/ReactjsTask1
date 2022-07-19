@@ -28,7 +28,7 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px;
+  padding: 8px;
   overflow: hidden;
 }
 .navbarresp{
@@ -86,10 +86,13 @@ a{
   color: #222222;
 }
 .adv1{
-  margin-top: 20px;
+  margin-top: 150px;
   background: #F0F0F0 0% 0% no-repeat padding-box;
 opacity: 1;
 
+}
+.cross{
+  padding: 8px;
 }
 .adimg1{
   height: auto;
