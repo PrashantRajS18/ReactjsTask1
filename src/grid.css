@@ -174,7 +174,7 @@ text-align: center;
 .mobmenu{
   display: block;
   overflow-y: scroll;
-   height: 1200px;
+   height: 750px;
   animation:  fadeIn  .5s linear;
 
 }
@@ -227,6 +227,9 @@ text-align: center;
 }
 .sec1img1 {
   width: 130%;
+}
+.mobmenu{
+  height: 515px;
 }
 .mediascroller{
   grid-auto-columns: 60%;
@@ -294,6 +297,9 @@ text-align: center;
   [class*="col-"] {
     width: 100%;
     padding: 5px;
+  }
+  .mobmenu{
+    height: 500px;
   }
   .visible{
     visibility: visible;
