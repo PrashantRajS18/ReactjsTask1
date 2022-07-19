@@ -170,7 +170,7 @@ text-align: center;
 }
 .mobmenu{
   display: block;
-  overflow-y: scroll !important;
+   height: 600px;
   animation:  fadeIn 0.5s ease-in-out;
 }
 .navbar li{
