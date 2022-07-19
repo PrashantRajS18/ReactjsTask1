@@ -312,12 +312,17 @@ text-align: center;
     width: 100%;
     padding: 5px;
   }
+  .sec1para{
+    display: -webkit-box;
+      max-width: 370px;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+   }
   .mobmenu{
     height: 1000px;
   }
-  .visible{
-    visibility: visible;
-  }
+ 
   .hidepara{
     display: none;
   }
@@ -331,6 +336,11 @@ text-align: center;
   }
   .cardbody{
     font-size: 12px;
+    display: -webkit-box;
+      max-width: 370px;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
   }
   .socialicon{
     left: 70%;
