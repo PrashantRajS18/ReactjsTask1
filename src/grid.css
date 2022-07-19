@@ -91,7 +91,7 @@
   width: 100%;
  }
  .mediascroller{
-  grid-auto-columns: 28%;
+  grid-auto-columns: 36%;
  }
  .editorcardsh{
   display: none;
