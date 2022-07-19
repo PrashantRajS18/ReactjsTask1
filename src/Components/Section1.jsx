@@ -8,7 +8,7 @@ const Section1 = ()=>{
                     <a href="/" style={{color:"#096FFA"}} className="Montbold">MANUFACTURING</a>
                     <h2 className="Mont" style={{marginTop : "20px"}}>Warburg Pincus set to acquire majority stake in auto parts maker</h2>
                     <p className="MontReg" style={{marginTop : "20px"}}>Private equity firm TPG, which is reportedly heading towards a public listing,
-                     said on Thursday it<span> had appointed</span> long-time<span className='visible'>...</span><span className = "hide">company executive Todd Sisitsky as president,
+                     said on Thursday it<span> had appointed</span> long-time<span className='visible'>...</span><span className = "hidepara">company executive Todd Sisitsky as president,
                       effective immediately.</span></p>
                       <ul className = "MontMed cardulsec1">
                       <li>30 September</li>
