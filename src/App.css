@@ -17,6 +17,10 @@ padding: 0;
 }
 .navbarresp{
   display: block;
+  overflow: hidden;
+  width: 100%;
+  border-bottom:1px solid #E3E3E3; 
+  box-shadow: 0px 2px 0px #0c0c0c42;
 }
 .burger {
   width: 35px;
