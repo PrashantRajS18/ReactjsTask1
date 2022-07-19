@@ -338,10 +338,14 @@ text-align: center;
     font-size: 12px;
        
   }
+  .editorcards{
+    padding: 0px;
+    margin-top: 0px;
+  }
   .cardpara{
     font-size: 12px;
     display: -webkit-box;
-    max-width: 370px;
+    max-width: 350px;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
