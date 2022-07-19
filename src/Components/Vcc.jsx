@@ -31,10 +31,10 @@ function Vcc() {
             </p>
           </div>
           <div className='mt-20'>
-            <p className='MontReg' style={{fontSize:"14px"}}>The global healthcare data is expected to grow at a CAGR of 36% by 2025. 
-            To make healthcare more equitable, affordable and accessible<span className='visible'>...</span><span className='hidepara'>, there is a need to find
+            <p className='MontReg sec1para' style={{fontSize:"14px"}}>The global healthcare data is expected to grow at a CAGR of 36% by 2025. 
+            To make healthcare more equitable, affordable and accessibl, there is a need to find
               ways to unite and generate actionable insights from data. How collaborations and strategic 
-            partnerships can harness the data to tackle the issues faced by the sector?</span></p>
+            partnerships can harness the data to tackle the issues faced by the sector?</p>
           </div>
           <div>
           <ul className = " cardul MontMed ">
