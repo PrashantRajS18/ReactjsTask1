@@ -174,7 +174,7 @@ text-align: center;
 .mobmenu{
   display: block;
   overflow-y: scroll;
-   height: 750px;
+   height: 1100px;
   animation:  fadeIn  .5s linear;
 
 }
@@ -220,8 +220,14 @@ text-align: center;
     .flexupcome{
       grid-auto-columns: 50% ;
     }
+    .mobmenu{
+      height: 1100px;
+    }
     .relate2{
       display: none;
+    }
+    .sec1img1{
+      width: 100%;
     }
   }
 @media only screen and (max-width: 780px){
@@ -233,7 +239,7 @@ text-align: center;
   width: 130%;
 }
 .mobmenu{
-  height: 515px;
+  height: 1100px;
 }
 .mediascroller{
   grid-auto-columns: 60%;
@@ -303,7 +309,7 @@ text-align: center;
     padding: 5px;
   }
   .mobmenu{
-    height: 700px;
+    height: 1000px;
   }
   .visible{
     visibility: visible;
