@@ -176,7 +176,7 @@ text-align: center;
   display: block;
   overflow-y: scroll;
    height: 1200px;
-  animation: all fadeIn  .6s linear;
+  animation:  fadeIn  1s linear;
 
 }
 .navbar li{
@@ -189,12 +189,12 @@ text-align: center;
   display: none;
 }
 @-webkit-keyframes fadeIn {
-  from { opacity: 0; }
-    to { opacity: 1; }
+  0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 @keyframes fadeIn {
-  from { opacity: 0; }
-    to { opacity: 1; }
+  0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 }
