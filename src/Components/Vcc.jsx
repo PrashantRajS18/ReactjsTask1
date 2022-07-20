@@ -3,7 +3,8 @@ import React from 'react'
 function Vcc() {
   return (
     <>
-        <div className='container vcc'>
+        <div className='container'>
+        <div className='vcc'>
         <div className='vcc1'>
             <h1 className='Mont'>VCC TV</h1>
             <p className='MontMed mt-40'>View More <img src='../imgs/rytarow.png' alt='arrow' /> </p>
@@ -45,6 +46,8 @@ function Vcc() {
          </div>
 
          </div>
+        </div>
+        
         </div>
         <div className='container'>
         <hr className='hr mt-50' ></hr>
