@@ -92,7 +92,7 @@ opacity: 1;
 
 }
 .adv2{
-    margin-top: 150px;
+    margin-top: 26px;
     background: #F0F0F0 0% 0% no-repeat padding-box;
     opacity: 1;
 }
@@ -601,6 +601,9 @@ scroll-behavior: smooth;
 }
 .none{
   display: none;
+}
+.hrmargin{
+  margin-top: 144px;
 }
 .blrrelate{
   position: absolute;

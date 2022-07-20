@@ -23,7 +23,7 @@ function App() {
   return (
    <>
 <Nav />
-<hr className='hr boxshdw' style={{marginTop:"10px"}}></hr>
+<hr className='hr boxshdw hrmargin'></hr>
 <Adv className ="adv2  hide" src ={Adv1} width = "90%"/>
 <Section1/>
 <Adv className ="adv3 none "  src ={Adv3} width = "80%" />
