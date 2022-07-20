@@ -227,6 +227,20 @@ text-align: center;
     .mediascroller{
       grid-auto-columns: 45%; 
     }
+    .premium{
+      left : 17%;
+    }
+    .Premiumtag{
+      left: 17%;
+      top: 62%;
+    }
+    .PremiumtagVcc{
+      top: 30%;
+    }
+    .Premiumtag1-3 {
+      top: 54%;
+      left: 12%;
+  }
     .flexupcome{
       grid-auto-columns: 50% ;
     }
@@ -470,4 +484,5 @@ text-align: center;
   top: 50%;
   left: 17%;
 }
+
 }
