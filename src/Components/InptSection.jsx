@@ -1,12 +1,24 @@
 import React, { useState } from 'react'
 import evelope from  '../imgs/envelope.png';
 function InptSection() {
-    const [name, setname] = useState('')
+    const [email, setemail] = useState('')
     const handleSubmit = event => {
         event.preventDefault(); 
-        console.log( name);
-        setname('');
+        console.log( email);
+      
+        const errors = {};
+       const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
+       if (!email) {
+         errors.email = "Email is required!";
+       } else if (!regex.test(email)) {
+         errors.email = "This is not a valid email format!";
+       }
+       console.log(errors)
+        setemail('');
       };
+      const handleChange = (event)=>{
+        setemail(event.target.value)
+      }
     
   return (
     <><div className='container'>
@@ -35,11 +47,12 @@ function InptSection() {
                 <input
                 type ="email"
                 placeholder='Email Address'
-                onChange={event => setname(event.target.value)}
-                value = {name}
+                onChange={handleChange}
+                value = {email}
                 
                 className = "inputfld"
                 />
+                
                 <button type='submit' className="button Montbold">Sign Up</button>
             </form>
           </div>
