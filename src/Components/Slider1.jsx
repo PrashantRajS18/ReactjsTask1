@@ -31,7 +31,8 @@ function Slider1(props ) {
       <div > 
             <img src={items.src}   className='Cardimg' alt = "cardimg" />
         <div className='cardbody  MontMed'>
-         <p>{items.body}</p>
+        
+         <p className='cardpara'>{items.body}</p>
          <ul className = " cardul MontMed ">
            <li>30 September</li>
            <li>Madhurima Nandy</li>
