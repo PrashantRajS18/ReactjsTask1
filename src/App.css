@@ -15,6 +15,7 @@ padding: 0;
 .containernav{
   padding-left: 100px;
   padding-right: 100px;
+  box-shadow: 0 5px 10px #0c0c0c42;
   background-color: #FFFFFF;
   position: fixed;
   z-index: 8;
@@ -92,7 +93,7 @@ opacity: 1;
 
 }
 .adv2{
-    margin-top: 26px;
+    margin-top: 168px;
     background: #F0F0F0 0% 0% no-repeat padding-box;
     opacity: 1;
 }
