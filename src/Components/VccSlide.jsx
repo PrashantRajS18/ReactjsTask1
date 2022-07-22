@@ -40,7 +40,7 @@ function VccSlide(props) {
                 
                 
                
-               <div className='cardtitle p-10'>
+               <div className='cardtitle p-10 fontsz'>
                 <a href="/" style={{color:"#096FFA"}} className="Montbold">{item.title}</a>
                 </div>
                 <div className='cardbody p-10 MontMed'>

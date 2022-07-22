@@ -50,7 +50,7 @@ function Mostpop() {
           <hr className ="hr"></hr>
           <div>
           <Cardflex2  src ={Mostpop4}
-          className = "flex"
+          className = "flex fz"
             title = "MANUFACTURING"
             body = "HDFC Capital marks initial close at $1.88 bn for its affordable housing fund 3"
           />
