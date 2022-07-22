@@ -7,6 +7,8 @@ function Slider1(props ) {
 
   const  scroll = (scrollOffset)=> {
     ref.current.scrollLeft += scrollOffset;
+    
+
   };
 
   return (
