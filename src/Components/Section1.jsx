@@ -1,4 +1,5 @@
 import Sec1 from '../imgs/sec1.png'
+
 const Section1 = ()=>{
     return(
         <>
