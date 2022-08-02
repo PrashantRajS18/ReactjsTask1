@@ -1,59 +1,104 @@
 import React from 'react'
-import Cards from '../Components/Cards.';
+// import Cards from '../Components/Cards.';
 import Premium from './Premium';
-import Cardimg1 from '../imgs/cardimg1.png';
-import Cardimg2 from '../imgs/paytm.png';
-import Cardimg3 from '../imgs/cardimg3.png';
-import Cardimg4 from '../imgs/cardimg4.png';
-function CardFlex() {
+
+function CardFlex(props) {
   return (
     <>
     <div className='container Cardflex'>
     <div className=' row'>
     <div className='col-3 postion'>
-    <Cards 
-    className = "cardflx"
-         src = {Cardimg1}
-         width= "100%"
-         title = "ECONOMY"
-         body = "Indian shares snap 5-day rally on weak global cues, post weekly gain"
-        />
-        <Premium
+    <div>
+    <div>
+        <div> 
+            <img src= {props.item.stories_list[1].file_url}  className='Cardimg'  alt = "cardimg" />
+        </div>
+        </div>
+        <div className='crdbdy'>
+        <div className='cardtitle'>
+        <a href="/" style={{color:"#096FFA"}} className="Montbold">{props.item.stories_list[1].industry_details[0].name}</a>
+        </div>
+        <div className='cardbody cardpara MontMed'>
+         <p>{props.item.stories_list[1].title}</p>
+        </div>
+        <ul className = " cardul MontMed ">
+           <li>{props.item.stories_list[1].publish}</li>
+           <li>{props.item.stories_list[1].author_details[0].name}</li>
+        </ul>
+        </div>
+    </div>
+        {/* <Premium
         className ="Montbold premium"
-         />
+         /> */}
     </div>
     <div className='col-3 postion'>
-    <Cards 
-    className = "cardflx "
-         src = {Cardimg2}
-         width= "100%"
-         title = "FINANCE"
-         body = "Paytm to shut Canada B2C app amid eroding market capitalisation"
-        />
+    <div>
+    <div>
+        <div> 
+            <img src= {props.item.stories_list[2].file_url}  className='Cardimg'  alt = "cardimg" />
+        </div>
+        </div>
+        <div className='crdbdy'>
+        <div className='cardtitle'>
+        <a href="/" style={{color:"#096FFA"}} className="Montbold">{props.item.stories_list[2].industry_details[0].name}</a>
+        </div>
+        <div className='cardbody cardpara MontMed'>
+         <p>{props.item.stories_list[2].title}</p>
+        </div>
+        <ul className = " cardul MontMed ">
+           <li>30 September</li>
+           <li>Madhurima Nandy</li>
+        </ul>
+        </div>
+    </div>
           <Premium
         className ="Montbold Premiumtag"
          />
     </div>
     <div className='col-3 postion'>
-    <Cards 
-    className = "cardflx "
-         src = {Cardimg3}
-         width= "100%"
-         title = "CONSUMER"
-         body = "Exclusive:PE-backed sauce maker Wingreen Capital-backed cereal maker"
-        />
+    <div>
+    <div>
+        <div> 
+            <img src= {props.item.stories_list[3].file_url}  className='Cardimg'  alt = "cardimg" />
+        </div>
+        </div>
+        <div className='crdbdy'>
+        <div className='cardtitle'>
+        <a href="/" style={{color:"#096FFA"}} className="Montbold">{props.item.stories_list[3].industry_details[0].name}</a>
+        </div>
+        <div className='cardbody cardpara MontMed'>
+         <p>{props.item.stories_list[3].title}</p>
+        </div>
+        <ul className = " cardul MontMed ">
+           <li>30 September</li>
+           <li>Madhurima Nandy</li>
+        </ul>
+        </div>
+    </div>
           {/* <Premium
         className ="Montbold Premiumtag"
          /> */}
     </div>
     <div className='col-3 '>
-    <Cards 
-    className = "cardflx"
-         src = {Cardimg4}
-         width= "100%"
-         title = "ECONOMY"
-         body = "GLOBAL MARKETS-European shares in the red after hawkish Fed comments"
-        />
+    <div>
+    <div>
+        <div> 
+            <img src= {props.item.stories_list[4].file_url}  className='Cardimg'  alt = "cardimg" />
+        </div>
+        </div>
+        <div className='crdbdy'>
+        <div className='cardtitle'>
+        <a href="/" style={{color:"#096FFA"}} className="Montbold">{props.item.stories_list[4].industry_details[0].name}</a>
+        </div>
+        <div className='cardbody cardpara MontMed'>
+         <p>{props.item.stories_list[4].title}</p>
+        </div>
+        <ul className = " cardul MontMed ">
+           <li>30 September</li>
+           <li>Madhurima Nandy</li>
+        </ul>
+        </div>
+    </div>
          
     </div>
     

@@ -19,12 +19,49 @@ import {Slider1  } from './Components/Slider1';
 import VccSlide from './Components/VccSlide';
 import Upcome from './Components/Upcome';
 import {Carouseldata , Carouseldata2 ,Carouseldata3,Carouseldata4,Carouseldata5,Carouseldata6} from './Carousel1data'
+import { useState , useEffect } from 'react';
+import axios from 'axios' ;
 function App() {
+  const[State,setState] = useState([])
+  
+  useEffect(()=>{
+    axios.get(`https://run.mocky.io/v3/25b66855-89a3-45a5-8db6-85fc85041185`)
+    .then((response) =>{
+      console.log(response)
+      setState(response.data.section_list)
+      
+      // console.log(response.data.section_list[0].stories_list[0].title);
+
+    })
+  },[])
   return (
    <>
-<Nav />
+   <Nav /> 
+   <Adv  className ="adv2  hide" src ={Adv1} width = "90%"/>
+   {
+    State.map((item,key) =>{
+      {/* console.log(item) */}
+     if(key === 0) return(
+      <>
+      <Section1   item = {item}/>
+      <CardFlex   item = {item}/>
+      </>
+     )
+     if(key === 1 ) return(
+      <>
+      <Editor 
+      item = {item}
+      
+      />
+      </>
+
+     )
+    })
+   }
+   <Adv className ="adv1 hide "  src ={Adv2} width = "80%" />
+{/* <Nav /> */}
 {/* <hr className='hr boxshdw hrmargin'></hr> */}
-<Adv className ="adv2  hide" src ={Adv1} width = "90%"/>
+{/* <Adv className ="adv2  hide" src ={Adv1} width = "90%"/>
 <Section1/>
 <Adv className ="adv3 none "  src ={Adv3} width = "80%" />
 <CardFlex />
@@ -102,7 +139,7 @@ className = "blrrelate hide "
         </div>
 <Stories />
 
-<Footer />
+<Footer /> */}
    </>
   );
 }

@@ -7,20 +7,20 @@ import Editorimg2 from '../imgs/editorimg2.png'
 import tmt from '../imgs/tmt.png'
 import consumer from '../imgs/consumer.png'
 import Adv3 from '../imgs/adv3.png' 
-function Editor() {
+function Editor(props) {
   return (
     <>
         <div className='container row' >
          <div className='col-4'  >
           <div style={{marginBottom:"30px"}}>
-            <h1>Editor's Pick</h1>
+            <h1> {props.item.section_name}</h1>
           </div>
           <div className='postion'>   
-          <Cards src ={Editorimg1}
+          <Cards src ={props.item.stories_list[0].file_url}
           width = "100%"
         
-            title = "ECONOMY"
-            body = "EMERGING MARKETS - Asian markets mixedas they digest Chinese data South Korean stocks fall"
+            title = {props.item.stories_list[0].industry_details[0].name}
+            body = {props.item.stories_list[0].title}
           />
            <Premium className="Montbold Premiumtag1-1" />
           </div>

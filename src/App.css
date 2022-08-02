@@ -142,6 +142,10 @@ margin-right: 40px;
 .sec1img{
   margin: 0 auto;
 }
+.sec1img1{
+  width: 100%;
+  border-radius: 8px;
+}
 .buttonSec1{
   background: #096FFA ;
   margin-top: 10px;
@@ -173,6 +177,7 @@ margin-right: 40px;
 .Cardimg{
   /* height: 100%; */
   width: 100%;
+  border-radius: 8px;
 }
 .cardtitle{
   /* margin-top: 15px; */
