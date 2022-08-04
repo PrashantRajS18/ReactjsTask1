@@ -30,6 +30,7 @@ function Editor(props) {
                 <Premium className="Montbold Premiumtag1-1" />
               ) : null}
             </div>
+            <hr className ="hr mt-30"></hr>
           </div>
           <div className="col-4  ">
             {props.item.stories_list.map((item, index) => {
@@ -56,6 +57,7 @@ function Editor(props) {
                 </>
               );
             })}
+            <hr className ="hr  mt-40"></hr>
           </div>
           <div className="col-1 ">
             <hr className="vrt"></hr>

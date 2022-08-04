@@ -3,10 +3,10 @@ function Cardflex2(props) {
   return (
     <>
     <h1>{props.sectitle}</h1>
-<div className={props.className}>
+<div className={props.className} >
              
             <img src={props.src}   className='Cardeditor' width={props.width} height={props.height} alt = "cardimg" />
-        <div>
+        <div style ={{paddingLeft:"5px"}}>
         <div className='cardtitle  p-20' style={{marginTop :"5px"}}>
         <a href={props.slug} style={{color:"#096FFA"}} className="Montbold">{props.title}</a>
         </div>
