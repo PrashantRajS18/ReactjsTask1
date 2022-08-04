@@ -42,8 +42,8 @@ function InptSection() {
            </div>
            
            </div>
-          <div className='col-6'>
-            <form className='form center' onSubmit={handleSubmit}>
+          <div className='col-7'>
+            <form className='form ' onSubmit={handleSubmit}>
                 <input
                 type ="email"
                 placeholder='Email Address'

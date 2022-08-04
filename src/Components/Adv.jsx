@@ -20,7 +20,7 @@ function Adv(props) {
     <>
     <div className='container'>
       <div className='row ' style={{padding:"15px"}}>
-        <div className='col-4 mt-50'>
+        <div className='col-4'>
         <div className='socialpos'>
           <img  src={social1} width ="100%"  className='ad'  alt="socialimg" />
           <div  className='socialpos2'>
@@ -31,10 +31,10 @@ function Adv(props) {
          
           
         </div>
-        <div className='col-1 mt-50'>
+        <div className='col-1 '>
         <hr className='vrt2' style ={{marginLeft: "64px"}}></hr>
         </div>
-        <div className='col-3 mt-40 mb-20 postion'>
+        <div className='col-3  mb-20 postion'>
         <div className='socialicon'>
         <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
         </div>
@@ -43,7 +43,7 @@ function Adv(props) {
         </h1>
         <img className='mt-20'  src={social2} width ="100%"  alt="socialimg" />
         </div>
-        <div className='col-1 mt-50'>
+        <div className='col-1 '>
         <hr className='vrt2'></hr>
         </div>
         <div className='col-3'>

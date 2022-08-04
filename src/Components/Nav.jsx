@@ -191,7 +191,7 @@ const Nav = () => {
 function Footer() {
   return (
     <>
-      <div className="Footer">
+      <div className="Footer mt-30">
         <div className=" row">
           <div className="col-2"></div>
           <div className="col-8">

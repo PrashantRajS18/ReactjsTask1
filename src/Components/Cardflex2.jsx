@@ -5,19 +5,19 @@ function Cardflex2(props) {
     <h1>{props.sectitle}</h1>
 <div className={props.className}>
              
-        <div> 
             <img src={props.src}   className='Cardeditor' width={props.width} height={props.height} alt = "cardimg" />
-        </div>
-        <div style={{padding:"10px"}}>
+        <div>
         <div className='cardtitle  p-20' style={{marginTop :"5px"}}>
-        <a href="/" style={{color:"#096FFA"}} className="Montbold">{props.title}</a>
+        <a href={props.slug} style={{color:"#096FFA"}} className="Montbold">{props.title}</a>
         </div>
         <div className='cardbody cardpara mt-10 p-20 MontMed'>
-         <p className='fz'>{props.body}</p>
+        <a href={props.slug2}><p className='fz'>{props.body}</p></a>
         </div>
         <ul className = " carduled mt-10 p-20 MontMed ">
-           <li>30 September</li>
-           <li>Madhurima Nandy</li>
+        <li>{props.publish}</li>
+           <li><a href={props.authorslug}>
+            {props.author}
+           </a></li>
         </ul>
         </div>
     </div>

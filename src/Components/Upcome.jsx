@@ -14,9 +14,9 @@ function Upcome(props) {
     <div className='relate2'>
     <button  onClick={() => scroll(200)} className='round'><img src='../imgs/slideicon.png' alt='icon' /></button>
     </div>
-    {/* <div className='relateryt3'>
+    <div className='relateryt3'>
     <button  onClick={() => scroll(-200)} className='round'><img src='../imgs/slideicon.png' className='sIcon' alt='icon' /></button>
-    </div> */}
+    </div>
       <div className='slideflex'>
     <h1 className='Mont mt-40' >{props.maintitle}</h1>
     <p className='MontMed mt-40'>View More <img src='../imgs/rytarow.png' alt='arrow' /> </p>

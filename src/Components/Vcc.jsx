@@ -1,6 +1,6 @@
 import React from 'react'
 // import vcc1 from '../imgs/vcc1.png';
-function Vcc() {
+function Vcc(props) {
   return (
     <>
         <div className='container'>
@@ -11,36 +11,38 @@ function Vcc() {
         </div>
          <div className='row'>
          <div className='col-6'>
- {/* <img src={vcc1} width ="100%" alt='' /> */}
- <iframe
+ {/* <iframe
       width="100%"
       height="300px"
       src="https://www.youtube.com/embed/SLfhMt5OUPI"
       
       title="Embedded youtube"
       className='iframe'
-    />
+    /> */}
+    <img  src={props.item.stories_list[0].file_url} className ="" width= "100%"  alt= " card img"  />
 
          </div>
          <div className='col-6'>
           <div>
-            <a href='/' style={{color:"#096FFA"}} className="Montbold"><p>HEALTHCARE</p></a> 
+            <a href={props.item.stories_list[0].industry_details[0].slug} style={{color:"#096FFA"}} className="Montbold"><p>{props.item.stories_list[0].industry_details[0].name}</p></a> 
           </div>
           <div className='mt-20'>
-            <p className='Montbold' style={{fontSize:"24px"}}>
-            How can we harness data for healthcare and safegaurd ourselves from cyber threats?
+          <a href={props.item.stories_list[0].slug}>
+          <p className='Montbold' style={{fontSize:"24px"}}>
+           {props.item.stories_list[0].title}
             </p>
+          </a>
+           
           </div>
           <div className='mt-20'>
-            <p className='MontReg sec1para' style={{fontSize:"14px"}}>The global healthcare data is expected to grow at a CAGR of 36% by 2025. 
-            To make healthcare more equitable, affordable and accessibl, there is a need to find
-              ways to unite and generate actionable insights from data. How collaborations and strategic 
-            partnerships can harness the data to tackle the issues faced by the sector?</p>
+            <p>
+              {props.item.stories_list[0].summary}
+            </p>
           </div>
           <div>
           <ul className = " cardul MontMed ">
-           <li>30 September</li>
-           <li>Madhurima Nandy</li>
+           <li>{props.item.stories_list[0].publish}</li>
+           <li>{props.item.stories_list[0].author_details[0].name}</li>
         </ul>
           </div>
          </div>
@@ -49,9 +51,7 @@ function Vcc() {
         </div>
         
         </div>
-        <div className='container'>
-        <hr className='hr mt-50' ></hr>
-        </div>
+        
     </>
   )
 }
