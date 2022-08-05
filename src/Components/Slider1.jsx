@@ -12,7 +12,9 @@ import Carousel, {
 import "@brainhubeu/react-carousel/lib/style.css";
 
 function Slider1(props) {
+  
   return (
+    
     <>
      {props.item.stories_list[0] ? (
        <div className="container  rel">
@@ -26,7 +28,7 @@ function Slider1(props) {
          
           plugins={[
             "infinite",
-            // "arrows",
+            "arrows",
             {
               resolve: slidesToShowPlugin,
               options: {
@@ -39,32 +41,32 @@ function Slider1(props) {
                 numberOfSlides: 1,
               },
             },
-            {
-              resolve: arrowsPlugin,
-              options: {
-                arrowLeft: (
-                  <button className="round1">
-                    <img src="../imgs/slideicon.png" alt="icon" />
-                  </button>
-                ),
-                arrowLeftDisabled: (
-                  <button className="round1 dis">
-                    <img src="../imgs/slideicon.png" alt="icon" />
-                  </button>
-                ),
-                arrowRight: (
-                  <button className="round2">
-                    <img src="../imgs/slideicon.png" alt="icon" />
-                  </button>
-                ),
-                arrowRightDisabled: (
-                  <button className="round2 dis">
-                    <img src="../imgs/slideicon.png" alt="icon" />
-                  </button>
-                ),
-                addArrowClickHandler: true,
-              },
-            },
+            // {
+            //   resolve: arrowsPlugin,
+            //   options: {
+            //     arrowLeft: (
+            //       <button className="round1">
+            //         <img src="../imgs/slideicon.png" alt="icon" />
+            //       </button>
+            //     ),
+            //     arrowLeftDisabled: (
+            //       <button className="round1 dis">
+            //         <img src="../imgs/slideicon.png" alt="icon" />
+            //       </button>
+            //     ),
+            //     arrowRight: (
+            //       <button className="round2">
+            //         <img src="../imgs/slideicon.png" alt="icon" />
+            //       </button>
+            //     ),
+            //     arrowRightDisabled: (
+            //       <button className="round2 dis">
+            //         <img src="../imgs/slideicon.png" alt="icon" />
+            //       </button>
+            //     ),
+            //     addArrowClickHandler: true,
+            //   },
+            // },
           ]}
           //  offset = {30}
           breakpoints={{

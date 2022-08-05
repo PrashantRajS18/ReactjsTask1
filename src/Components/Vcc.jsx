@@ -1,4 +1,5 @@
 import React from 'react'
+import moment from 'moment'
 // import vcc1 from '../imgs/vcc1.png';
 function Vcc(props) {
   return (
@@ -19,7 +20,7 @@ function Vcc(props) {
       title="Embedded youtube"
       className='iframe'
     /> */}
-    <img  src={props.item.stories_list[0].file_url} className ="" width= "100%"  alt= " card img"  />
+    <img  src={props.item.stories_list[0].file_url} className ="roundcard" width= "100%"  alt= " card img"  />
 
          </div>
          <div className='col-6'>
@@ -41,7 +42,7 @@ function Vcc(props) {
           </div>
           <div>
           <ul className = " cardul MontMed ">
-           <li>{props.item.stories_list[0].publish}</li>
+           <li>{moment(props.item.stories_list[0].publish).format('Do MMMM YYYY')} </li>
            <li>{props.item.stories_list[0].author_details[0].name}</li>
         </ul>
           </div>

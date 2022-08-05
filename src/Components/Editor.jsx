@@ -17,6 +17,7 @@ function Editor(props) {
             <div className="postion">
               <Cards
                 src={props.item.stories_list[0].file_url}
+                wth = "roundcard"
                 width="100% !important"
                 slug={props.item.stories_list[0].industry_details[0].slug}
                 title={props.item.stories_list[0].industry_details[0].name}

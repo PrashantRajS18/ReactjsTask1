@@ -1,5 +1,5 @@
 import React from 'react'
-
+import moment from 'moment'
 function Vcccards(props) {
   return (
     <>
@@ -19,7 +19,7 @@ function Vcccards(props) {
          </a>
         </div>
         <ul className = " cardul MontMed ">
-           <li>{props.publish}</li>
+           <li>{moment(props.publish).format('Do MMMM YYYY')}</li>
            <li><a href={props.authorslug}>
            {props.author}
            </a></li>

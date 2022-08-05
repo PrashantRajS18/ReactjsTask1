@@ -198,7 +198,11 @@ margin-right: 40px;
 }
 .cardbody{
   /* margin-top: 20px; */
+  font-weight : 700;
   font-size: 12px;
+}
+.roundcard{
+  border-radius: 8px;
 }
 .editorcards{
   display: flex;
@@ -729,6 +733,7 @@ scroll-behavior: smooth;
   position: relative;
   padding: 21px;
   width: 50px;
+  z-index: 2;
   height: 50px;
   border-radius: 50%;
   border: none;
@@ -736,7 +741,7 @@ scroll-behavior: smooth;
   outline: 0;
   font-size: 0;
   line-height: 0;
-  background-color: #7b59ff;
+  background-color: #316df1 !important;
 }
 .BrainhubCarouselItem{
   margin-left: 0px !important;
@@ -757,6 +762,7 @@ scroll-behavior: smooth;
 .BrainhubCarousel__customArrows{
   z-index: 2;
 }
+
 .round2 {
   border-radius: 50%;
   width: 50px;

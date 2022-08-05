@@ -1,4 +1,5 @@
 import React from 'react'
+import moment from 'moment'
 function Cardflex2(props) {
   return (
     <>
@@ -14,7 +15,7 @@ function Cardflex2(props) {
         <a href={props.slug2}><p className='fz'>{props.body}</p></a>
         </div>
         <ul className = " carduled mt-10 p-20 MontMed ">
-        <li>{props.publish}</li>
+        <li>{moment(props.publish).format('Do MMMM YYYY')}</li>
            <li><a href={props.authorslug}>
             {props.author}
            </a></li>

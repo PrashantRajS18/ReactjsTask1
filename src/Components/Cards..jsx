@@ -1,12 +1,7 @@
 import React from 'react'
-
+import moment from 'moment';
 function Cards(props) {
-//   const date = new Date("2020-07-22T13:22:10.2566789+00:00")
-// const formattedDate = date.toLocaleDateString("en-GB", {
-//   day: "numeric",
-//   month: "long",
-//   year: "numeric"
-// })
+
 
   return (
     <>
@@ -24,7 +19,7 @@ function Cards(props) {
          </a>
         </div>
         <ul className = " cardul MontMed ">
-           <li>{props.publish}</li>
+           <li>{moment(props.publish).format('Do MMMM YYYY')}</li>
           <li><a href={props.authorslug}>
           {props.author}
           </a></li>

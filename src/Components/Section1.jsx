@@ -1,6 +1,7 @@
 // import Sec1 from '../imgs/sec1.png'
 // import axios from 'axios' ;
 // import { useEffect, useState } from 'react';
+import moment from "moment"
 const Section1 = (props)=>{
   return(
       <>
@@ -11,7 +12,7 @@ const Section1 = (props)=>{
                  <a href={props.item.stories_list[0].slug} ><h2   className="Mont" style={{marginTop : "20px"}}>{props.item.stories_list[0].title}</h2></a> 
                   <p className="MontReg sec1para" style={{marginTop : "20px"}}>{props.item.stories_list[0].summary}</p>
                     <ul className = "MontMed cardulsec1">
-                    <li>{props.item.stories_list[0].publish}</li>
+                    <li>{moment(props.item.stories_list[0].publish).format('Do MMMM YYYY')}</li>
                      <li><a href={props.item.stories_list[0].author_details[0].slug}>{props.item.stories_list[0].author_details[0].name}</a></li> 
                     </ul>
                     <div>
