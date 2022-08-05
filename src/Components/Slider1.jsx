@@ -5,8 +5,7 @@ import Cards from "./Cards.";
 import Premium from "./Premium";
 import "../App.css";
 import Carousel, {
-  arrowsPlugin,
-  slidesToScrollPlugin,
+    slidesToScrollPlugin,
   slidesToShowPlugin,
 } from "@brainhubeu/react-carousel";
 import "@brainhubeu/react-carousel/lib/style.css";

@@ -2,7 +2,6 @@ import React from "react";
 
 import "../App.css";
 import Carousel, {
-  arrowsPlugin,
   slidesToScrollPlugin,
   slidesToShowPlugin,
 } from "@brainhubeu/react-carousel";

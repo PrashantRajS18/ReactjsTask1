@@ -39,7 +39,7 @@ function App() {
       <Nav />
       <Adv className="adv2  hide" src={Adv1} width="90%" />
       {State.map((item) => {
-        if (item.section_slug === "top-stories")
+         if (item.section_slug === "top-stories")
           return (
             <>
               <Section1 item={item} />
@@ -78,7 +78,7 @@ function App() {
                   <hr className="hr mt-50"></hr>
                 </div> : null 
               }
-              ) 
+              
             </>
           );
 
@@ -92,6 +92,7 @@ function App() {
                   <hr className="hr mt-50"></hr>
                 </div> : null 
               }
+          
             </>
           );
         if (item.section_slug === "upcoming-events")
@@ -176,7 +177,6 @@ function App() {
                 </div> : null 
               }
             </>
-            
           )
           if (item.section_slug === "mergers-acquisitions")
           return (
@@ -189,7 +189,6 @@ function App() {
                 </div> : null 
               }
             </>
-            
           )
       })}
       <Footer />
