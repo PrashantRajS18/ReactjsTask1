@@ -339,7 +339,7 @@ opacity: 1;
   border-radius:15px;
 }
 .form{
-  padding-left: 80px;
+  padding: 10px;
 }
 .inputfld{
   margin-right: 10px;
@@ -378,7 +378,12 @@ opacity: 1;
   padding: 5px;
 }
 .enve{
-  /* padding-left: 90px; */
+  padding-left: 25px;
+}
+.inpttext{
+  padding: 10px;
+  
+  font-size: 20px;
 }
 .center{
 padding: 20px;
@@ -549,7 +554,10 @@ padding: 20px;
   color: #FFFFFF;
 } 
 
-
+.scrollsnap{
+  scroll-snap-type: x mandatory;
+  scroll-snap-align: start;
+}
 .mediascroller{
  display: grid;
  grid-auto-flow: column;
@@ -644,7 +652,7 @@ scroll-behavior: smooth;
   top: 17%;
   left: 72%;
   /* border: 2px solid black; */
-  height: 338px;
+  height: 325px;
   width: 311px;
   border-radius: 8px;
   z-index: 1;

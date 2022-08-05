@@ -33,8 +33,8 @@ function InptSection() {
           </div>
           </div>
 
-           <div className='col-4 '>
-           <div className='center'>
+           <div className='col-5 '>
+           <div className='center inpttext'>
            <p style={{color:"#FFFFFFD8"}}>
             Get industry update with our daily newsletter 
             </p>
@@ -42,7 +42,7 @@ function InptSection() {
            </div>
            
            </div>
-          <div className='col-7'>
+          <div className='col-6'>
             <form className='form ' onSubmit={handleSubmit}>
                 <input
                 type ="email"

@@ -32,7 +32,9 @@ function VccSlide(props) {
                 </button>
               </div>
             </div>
+            <div className="blrrelate2"></div>
             <Carousel
+            className="scrollsnap"
               draggable={true}
               plugins={[
                 "infinite",
@@ -108,6 +110,7 @@ function VccSlide(props) {
                 return (
                   <>
                     <div className="postion">
+                    
                       <Vcccards
                         className=" Vcccard mt-10"
                         src={item.file_url}
