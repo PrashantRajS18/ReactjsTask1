@@ -427,7 +427,9 @@ text-align: center;
   .mobmenu{
     height: 1000px;
   }
- 
+ .cardulsec1{
+  font-size: 14px;
+ }
   .hidepara{
     display: none;
   }
