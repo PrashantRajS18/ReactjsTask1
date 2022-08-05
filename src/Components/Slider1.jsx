@@ -11,52 +11,65 @@ function Slider1(props) {
     ref.current.scrollLeft += scrollOffset;
   };
 
-  return ( 
+  return (
     <>
-     {props.item.stories_list[0] ? ( <div className="container postion  "  key={props.item.stories_list[0].feid} >
-        <div className="relate">
-          <button onClick={() => scroll(290)} className="round">
-            <img src="../imgs/slideicon.png" alt="icon" />
-          </button>
-        </div>
-        <div className='relateryt'>
-    <button  onClick={() => scroll(-290)} className='round'><img src='../imgs/slideicon.png' className='sIcon' alt='icon' /></button>
-    </div>
-        <div className="slideflex">
-          <a href= {props.item.section_slug}><h1 className="Mont mt-40">{props.item.section_name}</h1></a>
-          <p className="MontMed mt-40">
-            View More <img src="../imgs/rytarow.png" alt="arrow" />{" "}
-          </p>
-        </div>
-        <div className="blrrelate"></div>
-        <div ref={ref} className=" mediascroller postion">
-     
-        {props.item.stories_list.map((item) => {
-            return(
-              <>
-        <div className="Cards postion " key={props.item.stories_list[0].feid}>
-              
-              <Cards
+      {props.item.stories_list[0] ? (
+        <div
+          className="container postion  "
+          key={props.item.stories_list[0].feid}
+        >
+          <div className="relate">
+            <button onClick={() => scroll(290)} className="round">
+              <img src="../imgs/slideicon.png" alt="icon" />
+            </button>
+          </div>
+          <div className="relateryt">
+            <button onClick={() => scroll(-290)} className="round">
+              <img src="../imgs/slideicon.png" className="sIcon" alt="icon" />
+            </button>
+          </div>
+          <div className="slideflex">
+            <a href={props.item.section_slug}>
+              <h1 className="Mont mt-40">{props.item.section_name}</h1>
+            </a>
+            <p className="MontMed mt-40">
+              View More <img src="../imgs/rytarow.png" alt="arrow" />{" "}
+            </p>
+          </div>
+          <div className="blrrelate"></div>
+          <div ref={ref} className=" mediascroller postion">
+            {props.item.stories_list.map((item) => {
+              return (
+                <>
+                  <div
+                    className="Cards postion "
+                    key={props.item.stories_list[0].feid}
+                  >
+                    <Cards
                       className=" mt-10"
-                      src={item.file_url !== "" ? item.file_url : "../imgs/slide3.1.png"}
-                      width = "100%"
-                      title={item.industry_details[0].name}
+                      src={
+                        item.file_url !== ""
+                          ? item.file_url
+                          : "../imgs/slide3.1.png"
+                      }
+                      width="100%"
+                      // title={item.industry_details[0].name}
                       body={item.title}
                       publish={item.publish}
                       author={item.author_details[0].name}
                     />
-           {item.premium === "1" ? (
-                        <Premium className="Montbold Premiumtag" />
-                      ) : null}
+                    {item.premium === "1" ? (
+                      <Premium className="Montbold Premiumtag" />
+                    ) : null}
+                  </div>
+                </>
+              );
+            })}
           </div>
-            </>
-            )
-           })}
-          
         </div>
-      </div>) : null }
+      ) : null}
     </>
   );
 }
 
-export default Slider1 ;
+export default Slider1;
