@@ -47,6 +47,7 @@ function Slider1(props) {
                   >
                     <Cards
                       className=" mt-10"
+                      wth ="roundcard"
                       src={
                         item.file_url !== ""
                           ? item.file_url
