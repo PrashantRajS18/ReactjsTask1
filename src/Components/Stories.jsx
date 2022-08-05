@@ -1,9 +1,6 @@
 import React from "react";
 import Cardflex2 from "./Cardflex2";
-import { Adv } from "./Adv";
 import Premium from "./Premium";
-
-import Adv2 from "../imgs/adv2.png";
 function Stories(props) {
   return (
     <>

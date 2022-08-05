@@ -102,7 +102,7 @@ function Slider1(props) {
               <div className="postion">
                 <Cards
                   className="Cards cardpara mt-10"
-                  src = {item.file_url != "" ? item.file_url : "../imgs/slide3.1.png"}
+                  src = {item.file_url !== "" ? item.file_url : "../imgs/slide3.1.png"}
                   width="100%"
                   slug = {item.industry_details[0].slug}
                   // title={item.industry_details[0].name}

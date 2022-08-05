@@ -17,21 +17,21 @@ function Editor(props) {
             <div className="postion">
               <Cards
                 src={props.item.stories_list[0].file_url}
-                wth = "roundcard"
+                wth="roundcard"
                 width="100% !important"
                 slug={props.item.stories_list[0].industry_details[0].slug}
                 title={props.item.stories_list[0].industry_details[0].name}
                 slug2={props.item.section_slug}
                 body={props.item.stories_list[0].title}
                 publish={props.item.stories_list[0].publish}
-                authorslug = {props.item.stories_list[0].author_details[0].slug}
+                authorslug={props.item.stories_list[0].author_details[0].slug}
                 author={props.item.stories_list[0].author_details[0].name}
               />
               {props.item.stories_list[0].premium === "1" ? (
                 <Premium className="Montbold Premiumtag1-1" />
               ) : null}
             </div>
-            <hr className ="hr mt-30"></hr>
+            <hr className="hr mt-30"></hr>
           </div>
           <div className="col-4  ">
             {props.item.stories_list.map((item, index) => {
@@ -48,7 +48,7 @@ function Editor(props) {
                       slug2={item.slug}
                       body={item.title}
                       publish={item.publish}
-                      authorslug = {item.author_details[0].slug}
+                      authorslug={item.author_details[0].slug}
                       author={item.author_details[0].name}
                     />
                     {item.premium === "1" ? (
@@ -58,7 +58,7 @@ function Editor(props) {
                 </>
               );
             })}
-            <hr className ="hr  mt-40"></hr>
+            <hr className="hr  mt-40"></hr>
           </div>
           <div className="col-1 ">
             <hr className="vrt"></hr>
