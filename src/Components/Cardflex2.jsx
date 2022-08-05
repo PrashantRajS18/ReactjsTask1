@@ -24,7 +24,7 @@ function Cardflex2(props) {
           </div>
           <div className="cardbody cardpara mt-10 p-20 MontMed">
             <a href={props.slug2}>
-              <p className="fz">{props.body}</p>
+              <p  className={props.cardpara}>{props.body}</p>
             </a>
           </div>
           <ul className=" carduled mt-10 p-20 MontMed ">

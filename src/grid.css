@@ -29,11 +29,19 @@
   .PremiumtagVcc{
     top: 36%;
   }
+  .cardpara{}
 }
 @media only screen and (max-width: 1080px){
   .sec1sub1{
-    font-size: 12px;
+    font-size: 20px;
 
+  }
+  .relateryt2{
+    right: 87%;
+    top: 49%;
+  }
+  .vrt {
+    height: 300px;
   }
   .sec1img1{
     width: 100%;
@@ -45,7 +53,7 @@
   .sec1 .p-20{
     padding-left: 0px;
   }
-  .premium ,.Premiumtag{
+  .premium {
     top: 35%;
     left: 60%;
   }
@@ -166,7 +174,12 @@
   margin-top: 0px;
  }
  .cardul{
-  margin-top: 0px;
+  margin-top: 60px;
+  font-size: 12px;
+ }
+ .carduled{
+  margin-top: 60px;
+  font-size: 12px;
  }
  .flex2{
   flex-wrap: wrap;
@@ -195,8 +208,8 @@ text-align: center;
   display: flex;
  }
  .cardbody {
-  margin-top: 1px;
-  font-size: 21px;
+  margin-top: 20px;
+  font-size: 30px;
 }
 .adimg1{
   width: 100%;
@@ -281,6 +294,14 @@ text-align: center;
       top: 35%;
       left: 60%;
     }
+    .relateryt {
+      position: absolute;
+      right: 86%;
+      top: 49%;
+    }
+    .cardflx{
+      /* text-align: center; */
+    }
     
   } 
 
@@ -317,8 +338,11 @@ text-align: center;
   }
 @media only screen and (max-width: 780px){
 .Premiumtag {
-  top: 55%;
-  left: 15%;
+  top: 42%;
+  left: 80%;
+}
+.crdbdy{
+  margin-left: 5px;
 }
 .sec1img1 {
   width: 100%;
@@ -424,10 +448,10 @@ text-align: center;
     margin-top: 0px;
   }
   .cardpara{
-    font-size: 10px;
+    font-size: 12px;
     display: -webkit-box;
     max-width: 350px;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
@@ -479,9 +503,19 @@ text-align: center;
    .consumer{
    /* font-Size :10px; */
    }
+   .cardul {
+    margin-top: 8px;
+    font-size: 9px;
+   }
+   .carduled{
+    margin-top: 0px;
+   }
+   .Premiumtag1-2{
+    left: 15%;
+   }
   
 }
-@media only screen and (max-width : 360px){
+@media only screen and (max-width : 380px){
   .flex2 {
    flex-wrap: wrap;
     align-items: center;
@@ -498,6 +532,9 @@ text-align: center;
 }
 .navflx{
   font-size: smaller;
+}
+.cardbody{
+  margin-top: 5px;
 }
 .flexupcome {
   grid-auto-flow: row;
@@ -527,7 +564,7 @@ text-align: center;
 }
 .Premiumtag1-2{
   top: 58%;
-  left: 8%;
+  left: 15%;
 }
 .Premiumtag1{
   top:58%;
@@ -542,7 +579,7 @@ text-align: center;
   left: 18%;
 }
 .Premiumtag{
-  top: 35%;
+  top: 37%;
   left: 55%;
 }
 .fontsz{

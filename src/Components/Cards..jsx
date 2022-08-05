@@ -22,9 +22,9 @@ function Cards(props) {
               {props.title}
             </a>
           </div>
-          <div className="cardbody cardpara MontMed ">
+          <div className="cardbody  MontMed " >
             <a href={props.slug2}>
-              <p>{props.body}</p>
+              <p className={props.cardpara}>{props.body}</p>
             </a>
           </div>
           <ul className=" cardul MontMed ">

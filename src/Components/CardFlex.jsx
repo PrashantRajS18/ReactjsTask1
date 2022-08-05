@@ -12,15 +12,16 @@ function CardFlex(props) {
               if (index === 0 ) return null;
               return (
                 <>
-                  <div className="col-3 postion">
+                  <div className="col-3 postion ">
                     <Cards
-                      className="cardflx"
+                      className="cardflx "
                       src={item.file_url}
                       wth = "Cardimg"
                       width ="100%"
                       slug = {item.industry_details[0].slug}
                       title={item.industry_details[0].name}
                       slug2 ={item.slug}
+                      cardpara = "cardpara"
                       body={item.title}
                       publish={item.publish}
                       authorslug = {item.author_details[0].slug}
