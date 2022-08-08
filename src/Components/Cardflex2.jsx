@@ -31,7 +31,7 @@ function Cardflex2(props) {
           <ul className=" carduled mt-10 p-20 MontMed ">
             <li>{moment(props.publish).format("Do MMMM YYYY")}</li>
             <li>
-              {props.authorslug ?<Link to={props?.authorslug || ""}>{props.author}</Link>: ""}
+              {props.authorslug ? <Link to={props?.authorslug || ""}>{props.author}</Link>: ""}
             </li>
           </ul>
         </div>

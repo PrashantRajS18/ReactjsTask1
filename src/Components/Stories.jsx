@@ -22,6 +22,7 @@ function Stories(props) {
               slug2={item.slug}
               body={item.title}
               publish={item.publish}
+              authorslug = {item.author_details[0].slug}
               author={item.author_details[0].name}
             />
             { item.premium === "1" ?  <Premium className="Montbold Premiumtag1-2" /> : null}
