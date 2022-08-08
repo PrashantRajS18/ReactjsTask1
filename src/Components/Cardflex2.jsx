@@ -1,5 +1,6 @@
 import React from "react";
 import moment from "moment";
+import { Link } from "react-router-dom";
 function Cardflex2(props) {
   return (
     <>
@@ -14,23 +15,23 @@ function Cardflex2(props) {
         />
         <div style={{ paddingLeft: "5px" }}>
           <div className="cardtitle  p-20" style={{ marginTop: "5px" }}>
-            <a
-              href={props.slug}
+           {props.slug ? <Link
+              to={props?.slug || ""}
               style={{ color: "#096FFA" }}
               className="Montbold"
             >
               {props.title}
-            </a>
+            </Link> : ""}
           </div>
           <div className="cardbody cardpara mt-10 p-20 MontMed">
-            <a href={props.slug2}>
+           {props.slug ? <Link to={props?.slug || ""}>
               <p  className={props.cardpara}>{props.body}</p>
-            </a>
+            </Link> : ""}
           </div>
           <ul className=" carduled mt-10 p-20 MontMed ">
             <li>{moment(props.publish).format("Do MMMM YYYY")}</li>
             <li>
-              <a href={props.authorslug}>{props.author}</a>
+              {props.authorslug ?<Link to={props?.authorslug || ""}>{props.author}</Link>: ""}
             </li>
           </ul>
         </div>

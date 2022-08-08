@@ -1,5 +1,6 @@
 import React from 'react'
 import moment from 'moment'
+import { Link } from 'react-router-dom'
 function Vcccards(props) {
   return (
     <>
@@ -11,18 +12,20 @@ function Vcccards(props) {
         </div>
         <div className='Vccbody'>
         <div className='Vcccardtitle'>
-        <a href={props.slug} style={{color:"#096FFA"}} className="Montbold">{props.title}</a>
+        {props.slug ?<Link to={props.slug} style={{color:"#096FFA"}} className="Montbold">{props.title}</Link> : ""}
         </div>
         <div className='Vcccardbody cardpara MontMed '>
-         <a href={props.slug2}>
+         {props.slug2 ? <Link to={props.slug2}>
          <p>{props.body}</p>
-         </a>
+         </Link> : ""}
         </div>
         <ul className = " cardul MontMed ">
            <li>{moment(props.publish).format('Do MMMM YYYY')}</li>
-           <li><a href={props.authorslug}>
+           <li>
+          {props.authorslug ? <Link to={props.authorslug}>
            {props.author}
-           </a></li>
+           </Link>:""}
+           </li>
         </ul>
         </div>
     </div>

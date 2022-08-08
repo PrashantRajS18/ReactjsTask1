@@ -22,6 +22,16 @@
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
+@media screen and (max-width: 1650px){
+  .blrrelate2{
+    top: 19%;
+    left: 74%;
+    /* border: 2px solid black; */
+    height: 332px;
+
+  }
+
+}
 @media screen and (max-width: 1350px){
   .blrrelate2{
     top : 15%;
@@ -29,8 +39,33 @@
   .PremiumtagVcc{
     top: 36%;
   }
-  .cardpara{}
+  .cardpara{
+    max-width: 100%;
+    -webkit-line-clamp: 2;
+  }
 }
+@media only screen and (max-width: 1220px) {
+  .mediascroller{
+    grid-auto-columns: 45%; 
+  }
+
+  .PremiumtagVcc{
+    top: 42%;
+  }
+  .Premiumtag1-3 {
+    top: 100px;
+    left: 100px;
+}
+  .relateryt {
+    position: absolute;
+    right: 86%;
+    top: 49%;
+  }
+  .cardflx{
+    /* text-align: center; */
+  }
+  
+} 
 @media only screen and (max-width: 1080px){
   .sec1sub1{
     font-size: 20px;
@@ -103,7 +138,9 @@
   .sec1img {
     margin: 0px;
 }
-
+.Cardflex{
+  display: block;
+}
 .boxshdw{
   box-shadow: 0px 5px 10px #0c0c0c42;
 }
@@ -131,8 +168,7 @@
     display: block;
   }
  .Premiumtag {
-  top: 65%;
-  left: 18%;
+  
  }
  .relate ,.relate2 ,.relateryt ,.relateryt2 ,.relateryt3{
   display: none;
@@ -209,18 +245,20 @@ text-align: center;
  }
  .cardbody {
   margin-top: 20px;
-  font-size: 30px;
+  /* font-size: 30px; */
 }
 .adimg1{
   width: 100%;
 }
 .Premiumtag1-2{
-  top: 50% ;
-  left: 5% ;
+  top: 120px;
+  left: 120px;
 }
 .Premiumtag1-3{
-  top: 64%;
-  left: 15%;
+
+  top: 150px;
+  left: 220px;
+
 }
 .crdbdy{
   margin-left: 13px;
@@ -266,6 +304,9 @@ text-align: center;
 .sec1{
   margin-top: 100px;
 }
+.centerh{
+  text-align: center;
+}
 @-webkit-keyframes fadeIn {
   0% { opacity: 0; }
     100% { opacity: 1; }
@@ -282,28 +323,7 @@ text-align: center;
     width: 110%;
 }
 } */
-  @media only screen and (max-width: 1220px) {
-    .mediascroller{
-      grid-auto-columns: 45%; 
-    }
-
-    .PremiumtagVcc{
-      top: 42%;
-    }
-    .Premiumtag1-3{
-      top: 35%;
-      left: 60%;
-    }
-    .relateryt {
-      position: absolute;
-      right: 86%;
-      top: 49%;
-    }
-    .cardflx{
-      /* text-align: center; */
-    }
-    
-  } 
+ 
 
   @media only screen and (max-width: 920px) {
     .mediascroller{
@@ -313,15 +333,14 @@ text-align: center;
       left : 17%;
     }
     .Premiumtag{
-      left: 17%;
-      top: 62%;
+      /* left: 17%;
+      top: 62%; */
     }
     .PremiumtagVcc{
       top: 30%;
     }
     .Premiumtag1-3 {
-      top: 54%;
-      left: 50%;
+      left: 200px;
   }
     .flexupcome{
       grid-auto-columns: 50% ;
@@ -341,8 +360,14 @@ text-align: center;
   top: 42%;
   left: 80%;
 }
+.roundcard{
+  height: 250px;
+}
 .crdbdy{
   margin-left: 5px;
+}
+.cardbody{
+  font-size: 20px;
 }
 .sec1img1 {
   width: 100%;
@@ -365,13 +390,9 @@ text-align: center;
   left: 82% ;
 }
 .Premiumtag1-2{
-  top: 50% ;
-  left: 20% ;
+  left: 170px;
 }
-.Premiumtag1-3{
-  top: 62%;
-  left: 30%;
-}
+
 .container {
   padding-left: 5px  !important;
   padding-right: 5px !important;
@@ -430,6 +451,9 @@ text-align: center;
  .cardulsec1{
   font-size: 14px;
  }
+ .roundcard{
+  height: 100px;
+ }
   .hidepara{
     display: none;
   }
@@ -453,9 +477,12 @@ text-align: center;
     font-size: 12px;
     display: -webkit-box;
     max-width: 350px;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
+  }
+ .Vccimg{
+    height: 130px;
   }
   .socialicon{
     left: 70%;
@@ -480,8 +507,8 @@ text-align: center;
     left: 12% ;
   }
   .Premiumtag1-3{
-    top: 54%;
-    left: 15%;
+    top: 75px;
+    left: 90px;
   }
   .Premiumtag1{
     top:58%;
@@ -559,6 +586,8 @@ text-align: center;
 .Premiumtag1-3{
   width: 47px;
   font-size: 7px;
+    top: 70px;
+    left: 70px;
 }
 .PremiumtagVcc{
   top: 26% ;
@@ -566,7 +595,7 @@ text-align: center;
 }
 .Premiumtag1-2{
   top: 58%;
-  left: 15%;
+  left: 10%;
 }
 .Premiumtag1{
   top:58%;

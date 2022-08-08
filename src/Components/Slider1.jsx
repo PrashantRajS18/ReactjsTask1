@@ -3,6 +3,7 @@ import { useRef } from "react";
 import Cards from "./Cards.";
 import Premium from "./Premium";
 import "../App.css";
+import { Link } from "react-router-dom";
 
 function Slider1(props) {
   const ref = useRef(null);
@@ -29,9 +30,9 @@ function Slider1(props) {
             </button>
           </div>
           <div className="slideflex">
-            <a href={props.item.section_slug}>
+            <Link to={props.item.section_slug}>
               <h1 className="Mont mt-40">{props.item.section_name}</h1>
-            </a>
+            </Link>
             <p className="MontMed mt-40">
               View More <img src="../imgs/rytarow.png" alt="arrow" />{" "}
             </p>
@@ -47,6 +48,7 @@ function Slider1(props) {
                   >
                     <Cards
                       className=" mt-10"
+                      imgslug = {item.slug}
                       wth ="roundcard"
                       src={
                         item.file_url !== ""
@@ -54,9 +56,11 @@ function Slider1(props) {
                           : "../imgs/slide3.1.png"
                       }
                       width="100%"
-                      // title={item.industry_details[0].name}
+                     
+                      slug2 = {item.slug}
                       body={item.title}
                       publish={item.publish}
+                      authorslug = {item.author_details[0].slug}
                       author={item.author_details[0].name}
                     />
                     {item.premium === "1" ? (

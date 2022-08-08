@@ -1,6 +1,7 @@
 import React from 'react'
 import {useRef} from 'react';
 import {Carouseldata8} from '../Carousel1data';
+import {Link} from 'react-router-dom'
 function Upcome(props) {
   const ref = useRef(null);
 
@@ -30,7 +31,7 @@ function Upcome(props) {
              </div>
              <div style={{paddingLeft:"10px"}}>
              <div className='cardtitle  p-20' style={{marginTop :"5px"}}>
-             <a href="/" style={{color:"#096FFA"}} className="Montbold">{item.title}</a>
+             <Link to="/" style={{color:"#096FFA"}} className="Montbold">{item.title}</Link>
              </div>
              <div className='cardbody mt-10 p-20 MontMed'>
               <p style={{fontSize:"12px"}}>{item.body}</p>

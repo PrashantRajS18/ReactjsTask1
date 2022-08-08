@@ -4,6 +4,7 @@ import user from "../imgs/user.svg";
 import crown from "../imgs/crown.png";
 import down from "../imgs/downarrow.png";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 const Nav = () => {
   const [menu, setMenu] = useState(false);
 
@@ -23,76 +24,76 @@ const Nav = () => {
           <div className={menu ? "flexnavsub" : "flexnav"}>
             <div>
               <div className="none hamburger">
-                <a
-                  href="/"
+                <Link
+                  to="/"
                   type="button"
                   onClick={show}
                   className={menu ? "barshide" : " "}
                 >
                   <i class="fa-solid fa-bars"></i>
-                </a>
+                </Link>
               </div>
             </div>
             <div>
-              <a href="/" className={menu ? "logo" : " "}>
+              <Link to="/" className={menu ? "logo" : " "}>
                 <img src={logo} width="60%" alt="logo img" />
-              </a>
+              </Link>
             </div>
-            <a href="/" onClick={show} className={menu ? "cross" : "crosclose"}>
+            <Link to="/" onClick={show} className={menu ? "cross" : "crosclose"}>
               <i class="fa-solid fa-xmark"></i>
-            </a>
+            </Link>
           </div>
           <div></div>
           <ul className={menu ? "navflx2" : "navflx"}>
             <li className="hide">
-              <a href="/">
+              <Link to="/">
                 <img src={search} alt="search" /> Search
-              </a>
+              </Link>
             </li>
             <li className={menu ? "subs" : " "}>
-              <a href="/">
+              <Link to="/">
                 <img src={crown} alt="search" /> Subscribe
-              </a>
+              </Link>
             </li>
             <li className="hide">
-              <a href="/">
+              <Link to="/">
                 {" "}
                 <img src={user} alt="search" /> Sign in
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
         <subnav className="subnav Mont">
           <ul>
             <li>
-              <a href="/">Private Equity</a>
+              <Link to="/">Private Equity</Link>
             </li>
             <li>
-              <a href="/">Venture Capital</a>
+              <Link to="/">Venture Capital</Link>
             </li>
             <li>
-              <a href="/">M&A</a>
+              <Link to="/">M&A</Link>
             </li>
             <li>
-              <a href="/">
+              <Link to="/">
                 Industry <img src={down} alt="arrow" />
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/">Stressed Assests</a>
+              <Link to="/">Stressed Assests</Link>
             </li>
             <li>
-              <a href="/">Limited Partner</a>
+              <Link to="/">Limited Partner</Link>
             </li>
             <li>
-              <a href="/">founder</a>
+              <Link to="/">founder</Link>
             </li>
           </ul>
           <ul>
             <li className="li">
-              <a href="/">
+              <Link to="/">
                 Customize <img src={down} alt="arrow" />
-              </a>
+              </Link>
             </li>
           </ul>
         </subnav>
@@ -100,38 +101,38 @@ const Nav = () => {
         <div className={menu ? "mobmenu" : "hidemenu"}>
           <ul className="menu Montbold">
             <li className="menulist">
-              <a href="javascript;" onClick={prevent}>
+              <Link to="javascript;" onClick={prevent}>
                 Home
-              </a>
+              </Link>
             </li>
             <li className="menulist">
-              <a href="javascript;" onClick={prevent}>
+              <Link to="javascript;" onClick={prevent}>
                 Sign-in
-              </a>
+              </Link>
             </li>
             <li className="sub">
-              <a href="javascript;" onClick={prevent}>
+              <Link to="javascript;" onClick={prevent}>
                 <img src={crown} alt="search" /> Subscribe
-              </a>
+              </Link>
             </li>
             <li className="menulist">
-              <a href="javascript;" onClick={prevent}>
+              <Link to="javascript;" onClick={prevent}>
                 Private Equity
-              </a>
+              </Link>
             </li>
             <li className="menulist">
-              <a href="javascript;" onClick={prevent}>
+              <Link to="javascript;" onClick={prevent}>
                 Venture Capital
-              </a>
+              </Link>
             </li>
             <li className="menulist">
-              <a href="javascript;" onClick={prevent}>
+              <Link to="javascript;" onClick={prevent}>
                 M&A
-              </a>
+              </Link>
             </li>
             <li className="menulist">
-              <a
-                href="javascript;"
+              <Link
+                to="javascript;"
                 onClick={prevent}
                 style={{ display: "flex", justifyContent: "space-between" }}
               >
@@ -140,47 +141,47 @@ const Nav = () => {
                   {" "}
                   <img src={down} alt="arrow" />
                 </span>
-              </a>
+              </Link>
             </li>
             <li className="menulist">
-              <a href="javascript;" onClick={prevent}>
+              <Link to="javascript;" onClick={prevent}>
                 Stressed Assests
-              </a>
+              </Link>
             </li>
             <li className="menulist">
-              <a href="javascript;" onClick={prevent}>
+              <Link to="javascript;" onClick={prevent}>
                 Limited Partner
-              </a>
+              </Link>
             </li>
             <li className="menulist">
-              <a href="javascript;" onClick={prevent}>
+              <Link to="javascript;" onClick={prevent}>
                 founder
-              </a>
+              </Link>
             </li>
             <li className="menulist">
-              <a href="javascript;" onClick={prevent}>
+              <Link to="javascript;" onClick={prevent}>
                 About Us
-              </a>
+              </Link>
             </li>
             <li className="menulist">
-              <a href="javascript;" onClick={prevent}>
+              <Link to="javascript;" onClick={prevent}>
                 Tag Listing
-              </a>
+              </Link>
             </li>
             <li className="menulist">
-              <a href="javascript;" onClick={prevent}>
+              <Link to="javascript;" onClick={prevent}>
                 Advertise With us
-              </a>
+              </Link>
             </li>
             <li className="menulist">
-              <a href="javascript;" onClick={prevent}>
+              <Link to="javascript;" onClick={prevent}>
                 Contact Us
-              </a>
+              </Link>
             </li>
             <li className="menulist">
-              <a href="javascript;" onClick={prevent}>
+              <Link to="javascript;" onClick={prevent}>
                 VCC Mobile App
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -203,19 +204,19 @@ function Footer() {
             />
             <ul className="footul">
               <li>
-                <a href="/">
+                <Link to="/">
                   <img src="../imgs/facebook.png" alt="facebook" />
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/">
+                <Link to="/">
                   <img src="../imgs/twitter.png" alt="twitter" />
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/">
+                <Link to="/">
                   <img src="../imgs/linkedin.png" alt="linkedin" />
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -226,50 +227,50 @@ function Footer() {
           <div className="col-8">
             <ul className="footul2 flex2 MontMed">
               <li>
-                <a href="/" style={{ color: "#FFFFFFB2" }}>
+                <Link to="/" style={{ color: "#FFFFFFB2" }}>
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/" style={{ color: "#FFFFFFB2" }}>
+                <Link to="/" style={{ color: "#FFFFFFB2" }}>
                   Advertise with us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/" style={{ color: "#FFFFFFB2" }}>
+                <Link to="/" style={{ color: "#FFFFFFB2" }}>
                   Contact us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/" style={{ color: "#FFFFFFB2" }}>
+                <Link to="/" style={{ color: "#FFFFFFB2" }}>
                   Copyright
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a href="/" style={{ color: "#FFFFFFB2" }}>
+                <Link to="/" style={{ color: "#FFFFFFB2" }}>
                   Privacy Policy
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/" style={{ color: "#FFFFFFB2" }}>
+                <Link to="/" style={{ color: "#FFFFFFB2" }}>
                   Terms of use
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/" style={{ color: "#FFFFFFB2" }}>
+                <Link to="/" style={{ color: "#FFFFFFB2" }}>
                   Contact us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/" style={{ color: "#FFFFFFB2" }}>
+                <Link to="/" style={{ color: "#FFFFFFB2" }}>
                   Company Listing
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/" style={{ color: "#FFFFFFB2" }}>
+                <Link to="/" style={{ color: "#FFFFFFB2" }}>
                   Tag Listing
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -280,49 +281,49 @@ function Footer() {
           <div className="col-8">
             <ul className="footul3 flex2 Montbold">
               <li>
-                <a href="/" style={{ color: "#FFFFFF" }}>
+                <Link to="/" style={{ color: "#FFFFFF" }}>
                   Our Products :
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/" style={{ color: "#FFFFFF" }}>
+                <Link to="/" style={{ color: "#FFFFFF" }}>
                   VCCircle
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/" style={{ color: "#FFFFFF" }}>
+                <Link to="/" style={{ color: "#FFFFFF" }}>
                   TechCircle{" "}
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/" style={{ color: "#FFFFFF" }}>
+                <Link to="/" style={{ color: "#FFFFFF" }}>
                   Events
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/" style={{ color: "#FFFFFF" }}>
+                <Link to="/" style={{ color: "#FFFFFF" }}>
                   Training
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/" style={{ color: "#FFFFFF" }}>
+                <Link to="/" style={{ color: "#FFFFFF" }}>
                   VCCEdge
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/" style={{ color: "#FFFFFF" }}>
+                <Link to="/" style={{ color: "#FFFFFF" }}>
                   SalesEdge
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/" style={{ color: "#FFFFFF" }}>
+                <Link to="/" style={{ color: "#FFFFFF" }}>
                   PartnerEdge
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/" style={{ color: "#FFFFFF" }}>
+                <Link to="/" style={{ color: "#FFFFFF" }}>
                   Edge Insights
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

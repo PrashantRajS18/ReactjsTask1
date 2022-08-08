@@ -173,8 +173,8 @@ margin-right: 40px;
 .cardul{
   list-style-type: none;
   display: inline-flex;
-  margin-top: 30px;
-  font-size: 8px;
+  margin-top: 0px;
+  font-size: 9px;
   color: #798692;
 }
 .cardul li:nth-child(2){
@@ -203,6 +203,9 @@ margin-right: 40px;
 }
 .roundcard{
   border-radius: 8px;
+  height: 188px;
+  object-fit: cover;
+  
 }
 .editorcards{
   display: flex;
@@ -414,7 +417,7 @@ padding: 20px;
   background: transparent linear-gradient(90deg, #FE8C00 0%, #F83600 100%) 0% 0% no-repeat padding-box;
   color: #FFFFFF;
   width: 60px;
-  z-index: 2;
+  z-index: 1;
   border-radius: 5px;
   padding: 5px;
 }
@@ -432,8 +435,8 @@ padding: 20px;
 }
 .Premiumtag1-3{
   position: absolute;
-  top: 50%;
-  left: 70%;
+  top: 150px;
+  left: 200px;
   font-size: 10px;
   background: transparent linear-gradient(90deg, #FE8C00 0%, #F83600 100%) 0% 0% no-repeat padding-box;
   color: #FFFFFF;
@@ -637,10 +640,12 @@ scroll-behavior: smooth;
 }
 .blrrelate{
   position: absolute;
-  top: 28%;
-  left: 73%;
+
+  top: 100px;
+  right: 94px;
+
   /* border: 2px solid black; */
-  height: 260px;
+  height: 310px;
   width: 300px;
   border-radius: 8px;
   z-index: 1;
@@ -657,7 +662,7 @@ scroll-behavior: smooth;
   height: 322px;
   width: 311px;
   border-radius: 8px;
-  z-index: 1;
+  z-index: 2;
   /* opacity: .8; */
   /* filter: blur(5px); */
   background: linear-gradient(to left, #000, rgb(0 0 0 / 0%));
@@ -739,49 +744,7 @@ scroll-behavior: smooth;
   position: relative;
 }
 
-.BrainhubCarousel__arrows {
-  position: relative;
-  padding: 21px;
-  width: 50px;
-  z-index: 2;
-  height: 50px;
-  border-radius: 50%;
-  border: none;
-  overflow: hidden;
-  outline: 0;
-  font-size: 0;
-  line-height: 0;
-  background-color: #316df1 !important;
-}
-.BrainhubCarouselItem{
-  margin-left: 0px !important;
-  margin-right: 0px !important;
-  padding: 5px;
-  box-sizing: border-box;
-}
-.round1 {
-  border-radius: 50%;
-  width: 50px;
 
-    height: 50px;
-  background-color: #316DF1;
-  transform: rotate(180deg);
-  border: 1px solid var(--unnamed-color-ffffff);
-  padding: 10px 10px;
-}
-.BrainhubCarousel__customArrows{
-  z-index: 2;
-}
-
-.round2 {
-  border-radius: 50%;
-  width: 50px;
-    height: 50px;
-  background-color: #316DF1;
-  /* transform: rotate(180deg); */
-  border: 1px solid var(--unnamed-color-ffffff);
-  padding: 10px 10px;
-}
 .dis{
   visibility: hidden;
 }
@@ -818,6 +781,8 @@ scroll-behavior: smooth;
 .Vccimg{
   border-top-left-radius: 14px;
   border-top-right-radius: 14px;
+  height: 200px;
+  object-fit: cover;
 }
 .Vccbody{
   padding: 10px;

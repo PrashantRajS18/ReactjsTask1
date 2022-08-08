@@ -49,7 +49,7 @@ function Social() {
             <div className="socialicon">
               <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
             </div>
-            <h1>Infographic</h1>
+            <h1 className="centerh">Infographic</h1>
             <img className="mt-20" src={social2} width="100%" alt="socialimg" />
           </div>
           <div className="col-1 ">

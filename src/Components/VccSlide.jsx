@@ -1,5 +1,6 @@
 import React from "react";
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 import Premium from "./Premium";
 import Vcccards from "./Vcccards";
 function VccSlide(props) {
@@ -16,18 +17,18 @@ function VccSlide(props) {
           <div className="container"  key={props.item.stories_list[0].feid}>
             <div className="slideflex container mt-40">
               <div className="Vccpre">
-                <a href={props.item.section_slug}>
+                <Link to={props.item.section_slug}>
                   <h1 className="Mont  " style={{ color: "#FFFFFF" }}>
                     {props.item.section_name}{" "}
                     <img src="../imgs/crown.png" alt="crown" />
                   </h1>
-                </a>
+                </Link> 
               </div>
               <div className="hide">
                 <button className="buttonVcc Montbold">
-                  <a href="/" style={{ color: "#FFFFFF" }}>
+                  <Link to="/" style={{ color: "#FFFFFF" }}>
                     Subscribe
-                  </a>
+                  </Link>
                 </button>
               </div>
             </div>
@@ -45,8 +46,6 @@ function VccSlide(props) {
             return (
               <>
               <div className="postion">
-
-              
                 <Vcccards
                   className=" Vcccard mt-10"
                   src={item.file_url}
@@ -56,21 +55,22 @@ function VccSlide(props) {
                   slug2 = {item.slug}
                   body={item.title}
                   publish={item.publish}
+                  authorslug = {item.author_details[0].slug}
                   author={item.author_details[0].name}
                 />
                   {item.premium === "1" ? (
-                        <Premium className="Montbold Premiumtag" />
-                      ) : null}
-                      </div>
+                   <Premium className="Montbold Premiumtag" />
+                 ) : null}
+                </div>
               </>
             );
           })}     
             </div>
             <div className="none vccbtn2">
               <button className="buttonVcc Montbold">
-                <a href="/" style={{ color: "#FFFFFF" }}>
+                <Link to="/" style={{ color: "#FFFFFF" }}>
                   Subscribe
-                </a>
+                </Link>
               </button>
             </div>
           </div>

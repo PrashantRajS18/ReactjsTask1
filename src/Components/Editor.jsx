@@ -16,8 +16,9 @@ function Editor(props) {
           <div className="col-4 mt-10">
             <div className="postion">
               <Cards
+              imgslug = {props.item.section_slug}
                 src={props.item.stories_list[0].file_url}
-                wth="roundcard"
+                wth="roundcard2"
                 width="100% !important"
                 slug={props.item.stories_list[0].industry_details[0].slug}
                 title={props.item.stories_list[0].industry_details[0].name}
