@@ -61,8 +61,12 @@ function Slider1(props) {
                       body={item.title}
                       publish={item.publish}
                       authorslug = {item.author_details[0].slug}
+                      tooltip = {item.author_details.length >1 ? "tooltip" : ""}
                       author={item.author_details[0].name}
+                      author2 = {item.author_details.length > 1 ? item.author_details[1].name : " "}
+                      secondname = {item.author_details.length > 1 ? "+1": " "}
                     />
+
                     {item.premium === "1" ? (
                       <Premium className="Montbold Premiumtag" />
                     ) : null}

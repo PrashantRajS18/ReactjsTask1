@@ -6,7 +6,6 @@ function Cards(props) {
     <>
      <Link to={props?.slug2 || " "}> 
       <div className={props.className}>
-       
         <img
           src={props.src}
           className={props.wth}
@@ -14,9 +13,6 @@ function Cards(props) {
           height={props.height}
           alt="cardimg"
         />
-        
-        
-
         <div className="crdbdy">
           <div className="cardtitle">
             {props.slug ? (
@@ -37,11 +33,24 @@ function Cards(props) {
             ) : " "}
           
           </div>
-          <ul className=" cardul MontMed ">
+         
+        </div>
+        <div className="cardfoot">
+        <ul className=" cardul MontMed " >
             <li>{moment(props.publish).format("Do MMMM YYYY")}</li>
-            <li>
-            {props.authorslug ?<Link to={props?.authorslug || ""}>{props.author}</Link>: ""}
+            <li  >
+            
+            {props.authorslug ?<Link to={props?.authorslug || ""}>{props.author} </Link>: ""}
+            
+
             </li>
+            <li style={{paddingLeft : "10px"}}>
+            <p className={props.tooltip}>
+              {props.secondname}
+              <span class="tooltiptext">{props.author2} </span>
+           </p>
+            </li>
+           
           </ul>
         </div>
       </div>
