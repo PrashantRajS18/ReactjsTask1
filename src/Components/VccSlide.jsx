@@ -53,10 +53,13 @@ function VccSlide(props) {
                   slug = {item.industry_details[0].slug}
                   title={item.industry_details[0].name}
                   slug2 = {item.slug}
+                  cardpara = "cardpara"
                   body={item.title}
                   publish={item.publish}
                   authorslug = {item.author_details[0].slug}
                   author={item.author_details[0].name}
+                  author2 = {item.author_details.length > 1 ? item.author_details[1].name : " "}
+                      secondname = {item.author_details.length > 1 ? "+1": " "}
                 />
                   {item.premium === "1" ? (
                    <Premium className="Montbold Premiumtag" />

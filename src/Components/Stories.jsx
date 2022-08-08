@@ -24,6 +24,8 @@ function Stories(props) {
               publish={item.publish}
               authorslug = {item.author_details[0].slug}
               author={item.author_details[0].name}
+              author2 = {item.author_details.length > 1 ? item.author_details[1].name : " "}
+                      secondname = {item.author_details.length > 1 ? "+1": " "}
             />
             { item.premium === "1" ?  <Premium className="Montbold Premiumtag1-2" /> : null}
           </div>

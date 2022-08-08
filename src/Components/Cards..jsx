@@ -14,6 +14,7 @@ function Cards(props) {
           alt="cardimg"
         />
         <div className="crdbdy">
+
           <div className="cardtitle">
             {props.slug ? (
               <Link
@@ -25,17 +26,14 @@ function Cards(props) {
               </Link>
             ) : null}
           </div>
-          <div className="cardbody cardpara MontMed ">
+          <div className="cardbody  MontMed ">
             {props.slug2 ? (
               <Link to={props?.slug2 || " "}>
                 <p className={props.cardpara}>{props.body}</p>
               </Link>
             ) : " "}
           
-          </div>
-         
-        </div>
-        <div className="cardfoot">
+            <div className="cardfoot">
         <ul className=" cardul MontMed " >
             <li>{moment(props.publish).format("Do MMMM YYYY")}</li>
             <li  >
@@ -53,6 +51,10 @@ function Cards(props) {
            
           </ul>
         </div>
+          </div>
+         
+        </div>
+       
       </div>
       </Link>
     </>

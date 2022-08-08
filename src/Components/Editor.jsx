@@ -23,10 +23,13 @@ function Editor(props) {
                 slug={props.item.stories_list[0].industry_details[0].slug}
                 title={props.item.stories_list[0].industry_details[0].name}
                 slug2={props.item.section_slug}
+                cardpara ="cardpara"
                 body={props.item.stories_list[0].title}
                 publish={props.item.stories_list[0].publish}
                 authorslug={props.item.stories_list[0].author_details[0].slug}
                 author={props.item.stories_list[0].author_details[0].name}
+                author2 = {props.item.stories_list[0].author_details.length > 1 ? props.item.stories_list[0].author_details[1].name : " "}
+                      secondname = {props.item.stories_list[0].author_details.length > 1 ? "+1": " "}
               />
               {props.item.stories_list[0].premium === "1" ? (
                 <Premium className="Montbold Premiumtag1-1" />
@@ -52,6 +55,8 @@ function Editor(props) {
                       publish={item.publish}
                       authorslug={item.author_details[0].slug}
                       author={item.author_details[0].name}
+                      author2 = {item.author_details.length > 1 ? item.author_details[1].name : " "}
+                      secondname = {item.author_details.length > 1 ? "+1": " "}
                     />
                     {item.premium === "1" ? (
                       <Premium className="Montbold Premiumtag1-2" />

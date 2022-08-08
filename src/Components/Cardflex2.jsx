@@ -33,6 +33,12 @@ function Cardflex2(props) {
             <li>
               {props.authorslug ? <Link to={props?.authorslug || ""}>{props.author}</Link>: ""}
             </li>
+            <li style={{paddingLeft : "10px"}}>
+            <p className={props.tooltip}>
+              {props.secondname}
+              <span class="tooltiptext">{props.author2} </span>
+           </p>
+            </li>
           </ul>
         </div>
       </div>

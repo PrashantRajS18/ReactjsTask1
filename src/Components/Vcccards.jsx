@@ -26,6 +26,12 @@ function Vcccards(props) {
            {props.author}
            </Link>:""}
            </li>
+           <li style={{paddingLeft : "10px"}}>
+            <p className={props.tooltip}>
+              {props.secondname}
+              <span class="tooltiptext">{props.author2} </span>
+           </p>
+            </li>
         </ul>
         </div>
     </div>

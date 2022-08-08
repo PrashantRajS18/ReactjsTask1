@@ -58,6 +58,7 @@ function Slider1(props) {
                       width="100%"
                      
                       slug2 = {item.slug}
+                      cardpara = "cardpara"
                       body={item.title}
                       publish={item.publish}
                       authorslug = {item.author_details[0].slug}
