@@ -46,7 +46,7 @@ function Cards(props) {
             <Link to={props?.authorslug || ""} className={props.tooltip}>
               {props.secondname}
               <span class="tooltiptext">{props.author2} </span>
-           </Link >
+           </Link>
             </li>
            
           </ul>
