@@ -36,10 +36,12 @@ function App() {
   }, []);
   return (
     <>
-      <Nav />
+      {loading ? 
+      <>
+       <Nav />
       <Adv className="adv2  hide" src={Adv1} width="90%" />
       
-     {loading ?   State.map((item) => {
+     { State.map((item) => {
        
          if (item.section_slug === "top-stories") 
           return (
@@ -191,12 +193,12 @@ function App() {
             </>
           );
           return null;
-      }) : 
+      })}
+      <Footer /> </>: 
       <div className="centerspin">
       <SpinnerDiamond />
       </div>
       }
-      <Footer />
  
     </>
   );
