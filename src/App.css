@@ -545,6 +545,7 @@ padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 500px;
 }
 .footul2 li{
   padding: 8px;
