@@ -546,7 +546,7 @@ text-align: center;
   }
   .Premiumtag1-2{
     top: 50% ;
-    left: 12% ;
+    left: 14% ;
   }
   .Premiumtag1-3{
     top: 75px;
@@ -581,9 +581,7 @@ text-align: center;
    .carduled{
     margin-top: 0px;
    }
-   .Premiumtag1-2{
-    left: 15%;
-   }
+  
   
 }
 @media only screen and (max-width : 380px){
