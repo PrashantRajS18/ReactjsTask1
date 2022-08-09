@@ -163,6 +163,14 @@ margin-right: 40px;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+.cardpara2{
+  font-size: 15px;
+  display: -webkit-box;
+  max-width: 350px;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 .Cardflex{
   display: flex;
   margin-top: 20px;
@@ -228,6 +236,10 @@ margin-right: 40px;
  /* width: 100%; */
  border-radius: 8px;
 }
+.Cardeditorup{
+  /* width: 100%; */
+  border-radius: 8px;
+ }
 .carduled{
   list-style-type: none;
   display: inline-flex;

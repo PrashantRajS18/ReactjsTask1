@@ -43,6 +43,10 @@
     max-width: 100%;
     -webkit-line-clamp: 1;
   }
+  .carduled ,.cardul{
+    font-size: 6px;
+  }
+ 
 }
 @media only screen and (max-width: 1220px) {
   .mediascroller{
@@ -71,9 +75,15 @@
     font-size: 20px;
 
   }
+  .Cardeditor{
+    height: 75px;
+    object-fit: cover;
+  }
+  .mt-40{
+    margin-top: 0px;
+  }
   .relateryt2{
-    right: 87%;
-    top: 49%;
+  display: none;
   }
   .vrt {
     height: 300px;
@@ -96,7 +106,7 @@
     top: 40%;
   }
   .Premiumtag1-3{
-    top: 53%;
+    top: 48%;
   }
   .vrt2{
     margin-left: 24px !important;
@@ -119,8 +129,8 @@
 .center{
   padding: 7px;
 }
-.relate ,.relate2{
-  left: 88%;
+.relate ,.relate2 ,.relateryt3, .relateryt{
+  display: none;
 }
 }
 @media only screen and (max-width: 980px) {
@@ -128,9 +138,17 @@
   [class*="col-"] {
     width: 100%;
   }
+  
   .col-2{
     width: 0%;
     display: none;
+  }
+  .Cardeditor{
+    height: 158px;
+    object-fit: cover;
+  }
+  .Cardeditorup{
+    height: 75px;
   }
   .sec1{
     flex-wrap: wrap-reverse;
@@ -385,6 +403,9 @@ text-align: center;
   top: 61%;
   left: 82%;
 }
+.Premiumtag1-3{
+  top: 130px;
+}
 .PremiumtagVcc{
   top: 50% ;
   left: 82% ;
@@ -417,12 +438,14 @@ text-align: center;
 }
   .Cardimg{
    width:  40%;
+   height: 125px;
   }
   .flexupcome {
     grid-auto-flow: row;
     justify-content: center;
     grid-auto-columns: 100%;
   }
+
 
 
 }
@@ -441,6 +464,9 @@ text-align: center;
   top: 100px;
   left: 140px;
 }
+.Cardeditor{
+  height: 158px;
+}
 }
 
 @media only screen and (max-width: 480px){
@@ -455,6 +481,9 @@ text-align: center;
       -webkit-box-orient: vertical;
       overflow: hidden;
    }
+   .Cardeditor{
+    height: 100px;
+  }
   .mobmenu{
     height: 1000px;
   }
@@ -490,6 +519,9 @@ text-align: center;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
+  }
+  .Cardimg{
+    height: 88px;
   }
  .Vccimg{
     height: 130px;

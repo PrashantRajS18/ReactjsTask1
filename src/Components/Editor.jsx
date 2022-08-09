@@ -47,10 +47,11 @@ function Editor(props) {
                       className="flex mt-10 "
                       src={item.file_url}
                       width="40%"
+                      height = "100px"
                       slug={item.industry_details[0].slug}
                       title={item.industry_details[0].name}
                       slug2={item.slug}
-                      // cardpara = "cardpara fz"
+                      cardpara = "cardpara2 fz"
                       body={item.title}
                       publish={item.publish}
                       authorslug={item.author_details[0].slug}
