@@ -1,5 +1,5 @@
 import React from "react";
-import { useRef  } from "react";
+import { useRef } from "react";
 import Cards from "./Cards.";
 import Premium from "./Premium";
 import "../App.css";
@@ -13,7 +13,7 @@ function Slider1(props) {
   //   setCounter(counter+1)
   // }
 
-// setCounter(prev => prev+1)
+  // setCounter(prev => prev+1)
 
   const scroll = (scrollOffset) => {
     ref.current.scrollLeft += scrollOffset;
@@ -55,24 +55,27 @@ function Slider1(props) {
                   >
                     <Cards
                       className=" mt-10"
-                      imgslug = {item.slug}
-                      wth ="roundcard"
+                      imgslug={item.slug}
+                      wth="roundcard"
                       src={
                         item.file_url !== ""
                           ? item.file_url
                           : "../imgs/slide3.1.png"
                       }
                       width="100%"
-                     
-                      slug2 = {item.slug}
-                      cardpara = "cardpara"
+                      slug2={item.slug}
+                      cardpara="cardpara"
                       body={item.title}
                       publish={item.publish}
-                      authorslug = {item.author_details[0].slug}
-                      tooltip = {item.author_details.length >1 ? "tooltip" : ""}
+                      authorslug={item.author_details[0].slug}
+                      tooltip={item.author_details.length > 1 ? "tooltip" : ""}
                       author={item.author_details[0].name}
-                      author2 = {item.author_details.length > 1 ? item.author_details[1].name : " "}
-                      secondname = {item.author_details.length > 1 ?  "+1" : " "}
+                      author2={
+                        item.author_details.length > 1
+                          ? item.author_details[1].name
+                          : " "
+                      }
+                      secondname={item.author_details.length > 1 ? "+1" : " "}
                     />
 
                     {item.premium === "1" ? (
