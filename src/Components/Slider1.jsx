@@ -1,5 +1,5 @@
 import React from "react";
-import { useRef } from "react";
+import { useRef , useState } from "react";
 import Cards from "./Cards.";
 import Premium from "./Premium";
 import "../App.css";
@@ -7,6 +7,13 @@ import { Link } from "react-router-dom";
 
 function Slider1(props) {
   const ref = useRef(null);
+  // const [counter, setCounter] = useState(0)
+
+  // function count(){
+  //   setCounter(counter+1)
+  // }
+
+// setCounter(prev => prev+1)
 
   const scroll = (scrollOffset) => {
     ref.current.scrollLeft += scrollOffset;
@@ -65,7 +72,7 @@ function Slider1(props) {
                       tooltip = {item.author_details.length >1 ? "tooltip" : ""}
                       author={item.author_details[0].name}
                       author2 = {item.author_details.length > 1 ? item.author_details[1].name : " "}
-                      secondname = {item.author_details.length > 1 ? "+1": " "}
+                      secondname = {item.author_details.length > 1 ?  "+1" : " "}
                     />
 
                     {item.premium === "1" ? (
