@@ -20,7 +20,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 function App() {
   const [State, setState] = useState([]);
-  // const [spinner, setSpinner] = useState(false);
+  const [isLoading, setLoading] = useState(true)
 
   useEffect(() => {
     axios
@@ -31,6 +31,7 @@ function App() {
 
         // console.log(response.data.section_list[0].stories_list[0].title);
       });
+      setLoading(false)
   }, []);
   return (
     <>
@@ -47,7 +48,7 @@ function App() {
               <Adv className="adv1 hide " src={Adv2} width="80%" />
               {item.section_border === "1" ? 
                 <div className="container">
-                  <hr className="hr mt-50"></hr>
+                  <hr className="hr mt-40"></hr>
                 </div> : null 
               }
             </>
@@ -60,7 +61,7 @@ function App() {
               <Social />
               {item.section_border === "1" ? 
                 <div className="container">
-                  <hr className="hr mt-50"></hr>
+                  <hr className="hr "></hr>
                 </div> : null 
               }
             

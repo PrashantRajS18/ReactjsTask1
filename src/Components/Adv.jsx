@@ -25,7 +25,7 @@ function Adv(props) {
 function Social() {
   return (
     <>
-      <div className="container">
+      <div className="container mt-20 ">
         <div className="row " style={{ padding: "15px" }}>
           <div className="col-4">
             <div className="socialpos">
@@ -45,7 +45,7 @@ function Social() {
           <div className="col-1 ">
             <hr className="vrt2" style={{ marginLeft: "64px" }}></hr>
           </div>
-          <div className="col-3  mb-20 postion">
+          <div className="col-3  postion">
             <div className="socialicon">
               <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
             </div>
