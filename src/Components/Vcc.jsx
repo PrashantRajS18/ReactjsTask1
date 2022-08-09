@@ -26,7 +26,7 @@ function Vcc(props) {
               <div>
                 {props.item.stories_list[0].industry_details[0].slug ?<Link
                   to={props.item.stories_list[0].industry_details[0].slug}
-                  style={{ color: "#096FFA" }}
+                  style={{ color: "#096FFA" ,textTransform : "uppercase"}}
                   className="Montbold"
                 >
                   <p>{props.item.stories_list[0].industry_details[0].name}</p>

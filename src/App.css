@@ -197,6 +197,7 @@ margin-right: 40px;
 }
 .cardtitle{
   /* margin-top: 15px; */
+  text-transform: uppercase;
 }
 .crdbdy{
   /* margin-left: 15px; */
