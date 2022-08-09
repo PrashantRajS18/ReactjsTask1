@@ -34,9 +34,16 @@ function Upcome(props) {
              <Link to="/" style={{color:"#096FFA"}} className="Montbold">{item.title}</Link>
              </div>
              <div className='cardbody mt-10 p-20 MontMed'>
-              <p style={{fontSize:"12px"}}>{item.body}</p>
+              <p style={{fontSize:"10px"}}>{item.body}</p>
              </div>
-             
+                  <ul className='cardul p-20'>
+                    <li>
+                      27th july 2022
+                    </li>
+                    <li>
+                      Joseph rai
+                    </li>
+                  </ul>
              </div>
          </div>
        })}

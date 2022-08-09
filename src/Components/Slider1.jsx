@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 function Slider1(props) {
   const ref = useRef(null);
-  // const [counter, setCounter] = useState(0)
+ 
 
   // function count(){
   //   setCounter(counter+1)
@@ -27,14 +27,16 @@ function Slider1(props) {
           key={props.item.stories_list[0].feid}
         >
           <div className="relate">
-            <button onClick={() => scroll(290)} className="round">
+            <button onClick={() => scroll(325)} className="round">
               <img src="../imgs/slideicon.png" alt="icon" />
             </button>
           </div>
+          
           <div className="relateryt">
-            <button onClick={() => scroll(-290)} className="round">
+            <button onClick={() => scroll(-325)} className="round " >
               <img src="../imgs/slideicon.png" className="sIcon" alt="icon" />
             </button>
+          
           </div>
           <div className="slideflex">
             <Link to={props.item.section_slug}>

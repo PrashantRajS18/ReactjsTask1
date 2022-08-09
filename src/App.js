@@ -20,6 +20,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 function App() {
   const [State, setState] = useState([]);
+  // const [spinner, setSpinner] = useState(false);
 
   useEffect(() => {
     axios

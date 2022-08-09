@@ -238,7 +238,7 @@ margin-right: 40px;
  border-radius: 8px;
 }
 .Cardeditorup{
-  /* width: 100%; */
+  width: 100%;
   border-radius: 8px;
  }
 .carduled{
@@ -558,6 +558,9 @@ padding: 20px;
   font-size: medium;
   align-items: center;
 }
+.slidehide{
+  display: none;
+}
 .Vccslide{
   background: #000000 0% 0% no-repeat padding-box;
 }
@@ -606,13 +609,15 @@ scroll-behavior: smooth;
  }
 
  .upcome{
-  margin: 10px;
+  margin: 5px;
+  width: 90%;
  }
  .flexupcome::-webkit-scrollbar {
    display: none; /* for Chrome, Safari, and Opera */
  }
 .round {
   border-radius: 50%;
+  cursor: pointer;
   width: 50px;
     height: 50px;
   background-color: #316DF1;
@@ -622,11 +627,13 @@ scroll-behavior: smooth;
 .relate{
   position: absolute;
   left: 92%;
+  cursor: pointer;
   top :50%;
   z-index: 2;
 }
 .relate2{
   position: absolute;
+  cursor: pointer;
   left: 92%;
   top :70%;
   z-index: 2;
@@ -636,6 +643,7 @@ scroll-behavior: smooth;
 }
 .relateryt{
   position: absolute;
+  cursor: pointer;
   right: 92%;
   top: 53%;
   z-index: 2;
@@ -643,12 +651,14 @@ scroll-behavior: smooth;
 .relateryt2{
   position: absolute;
   right: 92%;
+  cursor: pointer;
   top :50%;
   z-index: 2;
 }
 .relateryt3{
   position: absolute;
   right: 92%;
+  cursor: pointer;
   top :68%;
   z-index: 2;
 }
