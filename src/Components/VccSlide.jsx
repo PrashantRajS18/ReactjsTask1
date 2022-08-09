@@ -32,7 +32,7 @@ function VccSlide(props) {
                 </button>
               </div>
             </div>
-            <div className={props.className}></div>
+            {/* <div className={props.className}></div> */}
             <div ref={ref} className=" mediascroller">
               <div className="relate">
                 <button onClick={() => scroll(290)} className="round">

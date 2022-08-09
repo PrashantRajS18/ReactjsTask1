@@ -41,7 +41,7 @@
   }
   .cardpara{
     max-width: 100%;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 1;
   }
 }
 @media only screen and (max-width: 1220px) {

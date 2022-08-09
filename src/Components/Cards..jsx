@@ -43,10 +43,10 @@ function Cards(props) {
 
             </li>
             <li style={{paddingLeft : "10px"}}>
-            <p className={props.tooltip}>
+            <Link to={props?.authorslug || ""} className={props.tooltip}>
               {props.secondname}
               <span class="tooltiptext">{props.author2} </span>
-           </p>
+           </Link >
             </li>
            
           </ul>

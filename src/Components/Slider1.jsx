@@ -37,7 +37,7 @@ function Slider1(props) {
               View More <img src="../imgs/rytarow.png" alt="arrow" />{" "}
             </p>
           </div>
-          <div className="blrrelate"></div>
+          {/* <div className="blrrelate"></div> */}
           <div ref={ref} className=" mediascroller postion">
             {props.item.stories_list.map((item) => {
               return (

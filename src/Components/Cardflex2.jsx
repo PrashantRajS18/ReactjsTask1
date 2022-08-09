@@ -23,7 +23,7 @@ function Cardflex2(props) {
               {props.title}
             </Link> : ""}
           </div>
-          <div className="cardbody cardpara mt-10 p-20 MontMed">
+          <div className="cardbody  mt-10 p-20 MontMed">
            {props.slug ? <Link to={props?.slug || ""}>
               <p  className={props.cardpara}>{props.body}</p>
             </Link> : ""}

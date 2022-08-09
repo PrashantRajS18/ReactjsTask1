@@ -50,7 +50,7 @@ function Editor(props) {
                       slug={item.industry_details[0].slug}
                       title={item.industry_details[0].name}
                       slug2={item.slug}
-                      cardpara = "cardpara fz"
+                      // cardpara = "cardpara fz"
                       body={item.title}
                       publish={item.publish}
                       authorslug={item.author_details[0].slug}
