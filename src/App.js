@@ -20,7 +20,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 function App() {
   const [State, setState] = useState([]);
-  const [isLoading, setLoading] = useState(true)
+  // const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     axios
@@ -31,7 +31,7 @@ function App() {
 
         // console.log(response.data.section_list[0].stories_list[0].title);
       });
-      setLoading(false)
+      // setLoading(false)
   }, []);
   return (
     <>
