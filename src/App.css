@@ -541,6 +541,11 @@ padding: 20px;
   justify-content: center;
   
 }
+.centerspin{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .footul2 li{
   padding: 8px;
   font-size: 12px;

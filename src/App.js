@@ -14,13 +14,14 @@ import Stories from "./Components/Stories";
 import Slider1 from "./Components/Slider1";
 import VccSlide from "./Components/VccSlide";
 import Upcome from "./Components/Upcome";
+import { SpinnerDiamond } from 'spinners-react';
 
 import { useState, useEffect } from "react";
 
 import axios from "axios";
 function App() {
   const [State, setState] = useState([]);
-  // const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     axios
@@ -28,17 +29,17 @@ function App() {
       .then((response) => {
         console.log(response);
         setState(response.data.section_list);
-
+        setLoading(!false)
         // console.log(response.data.section_list[0].stories_list[0].title);
       });
-      // setLoading(false)
+      // 
   }, []);
   return (
     <>
       <Nav />
       <Adv className="adv2  hide" src={Adv1} width="90%" />
       
-      {State.map((item) => {
+     {loading ?   State.map((item) => {
        
          if (item.section_slug === "top-stories") 
           return (
@@ -190,7 +191,11 @@ function App() {
             </>
           );
           return null;
-      })}
+      }) : 
+      <div className="centerspin">
+      <SpinnerDiamond />
+      </div>
+      }
       <Footer />
  
     </>
