@@ -14,7 +14,7 @@ import Stories from "./Components/Stories";
 import Slider1 from "./Components/Slider1";
 import VccSlide from "./Components/VccSlide";
 import Upcome from "./Components/Upcome";
-import { SpinnerRoundOutlined } from 'spinners-react';
+// import { SpinnerRoundOutlined } from 'spinners-react';
 
 import { useState, useEffect } from "react";
 
@@ -196,7 +196,7 @@ function App() {
       })}
       <Footer /> </>: 
       <div className="centerspin">
-      <SpinnerRoundOutlined />
+      <div className="dots-flow" />
       </div>
       }
  
