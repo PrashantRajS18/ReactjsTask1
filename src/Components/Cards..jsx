@@ -36,7 +36,7 @@ function Cards(props) {
           
             <div className="cardfoot">
         <ul className=" cardul MontMed " >
-            <li>{moment(props.publish).format("Do MMMM YYYY")}</li>
+            <li>{moment(props.publish).format("Do MMM YYYY")}</li>
             <li  >
             
             {props.authorslug ?<Link to={props?.authorslug || ""}>{props.author} </Link>: ""}
