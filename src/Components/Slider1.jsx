@@ -17,6 +17,9 @@ function Slider1(props) {
 
   const scroll = (scrollOffset) => {
     ref.current.scrollLeft += scrollOffset;
+    ref.current.scrollLeft.classList.toggle('slidehide')
+
+    
   };
 
   return (

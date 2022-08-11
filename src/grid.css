@@ -41,7 +41,7 @@
   }
   .cardpara{
     max-width: 100%;
-    -webkit-line-clamp: 1;
+    -webkit-line-clamp: 2;
   }
   .carduled ,.cardul{
     font-size: 6px;
@@ -194,9 +194,9 @@
   .burger {
     display: block;
   }
- .Premiumtag {
-  
- }
+  .Premiumtag {
+    top: 40%;
+}
 
  .Premiumtag1 {
   top: 75%;
@@ -236,7 +236,7 @@
  }
  .cardul{
   margin-top: 60px;
-  font-size: 12px;
+  font-size: 11px;
  }
  .carduled{
   margin-top: 60px;
