@@ -528,10 +528,10 @@ text-align: center;
     margin-top: 0px;
   }
   .cardpara{
-    font-size: 12px;
+    font-size: 8px;
     display: -webkit-box;
     max-width: 350px;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 2 ;
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
@@ -591,10 +591,13 @@ text-align: center;
    }
    .cardul {
     margin-top: 8px;
-    font-size: 9px;
+    font-size: 5px;
    }
    .carduled{
     margin-top: 0px;
+   }
+   .mediascroller{
+    grid-auto-columns: 60%;
    }
   
   
@@ -605,7 +608,7 @@ text-align: center;
     align-items: center;
 }
 .fz{
-  font-size: 14px;
+  font-size: 9px;
 }
 .center {
   text-align: center;
@@ -624,6 +627,9 @@ text-align: center;
   grid-auto-flow: row;
   justify-content: center;
   grid-auto-columns: 100%;
+}
+.cardpara{
+  font-size: 7px;
 }
 .cardul ,.carduled{
   font-size: 7px;
