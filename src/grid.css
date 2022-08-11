@@ -528,10 +528,10 @@ text-align: center;
     margin-top: 0px;
   }
   .cardpara{
-    font-size: 8px;
+    font-size: 14px;
     display: -webkit-box;
     max-width: 350px;
-    -webkit-line-clamp: 2 ;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
@@ -591,7 +591,7 @@ text-align: center;
    }
    .cardul {
     margin-top: 8px;
-    font-size: 5px;
+    font-size: 8px;
    }
    .carduled{
     margin-top: 0px;
@@ -609,6 +609,12 @@ text-align: center;
 }
 .fz{
   font-size: 9px;
+}
+.Cardeditor {
+  height: 85px;
+}
+.Cardimg {
+  height: 72px;
 }
 .center {
   text-align: center;
@@ -656,7 +662,7 @@ text-align: center;
 }
 .Premiumtag1-2{
   top: 58%;
-  left: 10%;
+  left: 18%;
 }
 .Premiumtag1{
   top: 70%;
@@ -671,8 +677,8 @@ text-align: center;
   left: 18%;
 }
 .Premiumtag{
-  top: 37%;
-  left: 55%;
+  top: 44%;
+  left: 60%;
 }
 .fontsz{
   font-size: smaller;
