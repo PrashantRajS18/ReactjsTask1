@@ -134,7 +134,7 @@
   left: 88%;
 }
 .relateryt3{
-  right: 91%;
+  right: 85%;
   top:  54%;
 }
 .relateryt2{
@@ -238,7 +238,7 @@
   margin-top: 0px;
  }
  .cardul{
-  margin-top: 60px;
+  margin-top: 25px;
   font-size: 11px;
  }
  .carduled{
@@ -323,7 +323,7 @@ text-align: center;
 .navflx2{
   display: none;
 }
-.relate2{
+.relate2 ,.relateryt3{
   display: none;
 }
 .hrmargin{
@@ -374,7 +374,7 @@ text-align: center;
       left: 200px;
   }
     .flexupcome{
-      grid-auto-columns: 50% ;
+      grid-auto-columns: 70% ;
     }
     .mobmenu{
       height: 1100px;
@@ -608,7 +608,7 @@ text-align: center;
     align-items: center;
 }
 .fz{
-  font-size: 9px;
+  font-size: 9px !important;
 }
 .Cardeditor {
   height: 85px;
@@ -635,7 +635,7 @@ text-align: center;
   grid-auto-columns: 100%;
 }
 .cardpara{
-  font-size: 7px;
+  font-size: 11px;
 }
 .cardul ,.carduled{
   font-size: 7px;

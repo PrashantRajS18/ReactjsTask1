@@ -23,7 +23,7 @@ function Editor(props) {
                 slug={props.item.stories_list[0].industry_details[0].slug}
                 title={props.item.stories_list[0].industry_details[0].name}
                 slug2={props.item.section_slug}
-                cardpara ="cardpara"
+                cardpara ="cardpara fz"
                 body={props.item.stories_list[0].title}
                 publish={props.item.stories_list[0].publish}
                 authorslug={props.item.stories_list[0].author_details[0].slug}
