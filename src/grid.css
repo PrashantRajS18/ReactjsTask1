@@ -75,6 +75,9 @@
     font-size: 20px;
 
   }
+  .flexupcome{
+    grid-auto-columns: 48%;
+  }
   .Cardeditor{
     height: 75px;
     object-fit: cover;
@@ -332,6 +335,9 @@ text-align: center;
 .centerh{
   text-align: center;
 }
+.cardpara{
+  font-size: 11px;
+}
 @-webkit-keyframes fadeIn {
   0% { opacity: 0; }
     100% { opacity: 1; }
@@ -377,17 +383,20 @@ text-align: center;
     .sec1img1{
       width: 100%;
     }
+    .Cardeditorup{
+      height: 118px;
+    }
   }
 @media only screen and (max-width: 780px){
 .Premiumtag {
   top: 42%;
-  left: 80%;
+  left: 70%;
 }
 .relate ,.relate2 ,.relateryt ,.relateryt2 ,.relateryt3{
   display: none;
  }
 .roundcard{
-  height: 250px;
+  height: 140px;
 }
 .crdbdy{
   margin-left: 5px;
@@ -402,7 +411,7 @@ text-align: center;
   height: 1100px;
 }
 .mediascroller{
-  grid-auto-columns: 60%;
+  grid-auto-columns: 40%;
  }
 
 .Premiumtag1-1 {
