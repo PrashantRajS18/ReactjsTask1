@@ -44,7 +44,7 @@
     -webkit-line-clamp: 2;
   }
   .carduled ,.cardul{
-    font-size: 6px;
+    font-size: 10px;
   }
  
 }
@@ -678,10 +678,13 @@ text-align: center;
 }
 .Premiumtag{
   top: 44%;
-  left: 60%;
+  left: 56%;
 }
 .fontsz{
   font-size: smaller;
+}
+.Cardeditorup{
+  height: 78px;
 }
 
 }
