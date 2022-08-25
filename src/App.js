@@ -1,6 +1,4 @@
-import "./App.css";
-import "./font.css";
-import "./grid.css";
+
 import { Nav, Footer } from "./Components/Nav";
 import { Adv, Social } from "./Components/Adv";
 import Section1 from "./Components/Section1";
@@ -14,6 +12,10 @@ import Stories from "./Components/Stories";
 import Slider1 from "./Components/Slider1";
 import VccSlide from "./Components/VccSlide";
 import Upcome from "./Components/Upcome";
+import "./App.css";
+import "./font.css";
+import "./grid.css";
+import './container.css'
 // import { SpinnerRoundOutlined } from 'spinners-react';
 
 import { useState, useEffect } from "react";

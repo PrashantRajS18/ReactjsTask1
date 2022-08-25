@@ -19,7 +19,8 @@ const Nav = () => {
 
   return (
     <>
-      <header className="containernav">
+      <header className= " containernav ">
+      <div className=" container">
         <nav className={menu ? "navbarresp Mont" : "navbar Mont"}>
           <div className={menu ? "flexnavsub" : "flexnav"}>
             <div>
@@ -184,6 +185,7 @@ const Nav = () => {
               </Link>
             </li>
           </ul>
+        </div>
         </div>
       </header>
     </>

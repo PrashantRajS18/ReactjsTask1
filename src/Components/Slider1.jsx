@@ -29,7 +29,7 @@ function Slider1(props) {
           className="container postion  "
           key={props.item.stories_list[0].feid}
         >
-          <div className="relate">
+          <div className="relate1">
             <button onClick={() => scroll(325)} className="round">
               <img src="../imgs/slideicon.png" alt="icon" />
             </button>

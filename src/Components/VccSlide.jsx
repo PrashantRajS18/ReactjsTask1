@@ -13,7 +13,7 @@ function VccSlide(props) {
   return (
     <>
       {props.item.stories_list[0] ? (
-        <div className="Vccslide postion ">
+        <div className="Vccslide container-fluid postion ">
           <div className="container"  key={props.item.stories_list[0].feid}>
             <div className="slideflex container mt-40">
               <div className="Vccpre">
@@ -33,7 +33,7 @@ function VccSlide(props) {
               </div>
             </div>
             {/* <div className={props.className}></div> */}
-            <div ref={ref} className=" mediascroller">
+            <div ref={ref} className="  mediascroller">
               <div className="relate">
                 <button onClick={() => scroll(325)} className="round">
                   <img src="../imgs/slideicon.png" alt="icon" />

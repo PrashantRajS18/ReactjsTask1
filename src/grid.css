@@ -32,6 +32,7 @@
   }
 
 }
+
 @media screen and (max-width: 1350px){
   .blrrelate2{
     top : 15%;
@@ -49,6 +50,7 @@
  
 }
 @media only screen and (max-width: 1220px) {
+ 
   .mediascroller{
     grid-auto-columns: 45%; 
   }
@@ -71,10 +73,7 @@
   
 } 
 @media only screen and (max-width: 1080px){
-  .sec1sub1{
-    font-size: 20px;
-
-  }
+ 
   .flexupcome{
     grid-auto-columns: 48%;
   }
@@ -99,10 +98,7 @@
   .sec1 .p-20{
     padding-left: 0px;
   }
-  .premium {
-    top: 35%;
-    left: 60%;
-  }
+ 
   .Premiumtag1-1{
     top: 40%;
   }
@@ -130,7 +126,7 @@
 .center{
   padding: 7px;
 }
-.relate{
+.relate ,.relate1{
   left: 88%;
 }
 .relateryt3{
@@ -198,9 +194,7 @@
   .burger {
     display: block;
   }
-  .Premiumtag {
-    top: 40%;
-}
+ 
 
  .Premiumtag1 {
   top: 75%;
@@ -279,10 +273,10 @@ text-align: center;
 .adimg1{
   width: 100%;
 }
-.Premiumtag1-2{
+/* .Premiumtag1-2{
   top: 120px;
   left: 120px;
-}
+} */
 .Premiumtag1-3{
 
   top: 150px;
@@ -331,7 +325,7 @@ text-align: center;
   margin-top: 66px;
 }
 .sec1{
-  margin-top: 100px;
+  /* margin-top: 100px; */
 }
 .centerh{
   text-align: center;
@@ -350,12 +344,7 @@ text-align: center;
 
 }
 
-/* @media only screen and (max-width: 780px){
-.sec1img1 {
-    width: 110%;
-}
-} */
- 
+
 
   @media only screen and (max-width: 920px) {
     .mediascroller{
@@ -393,7 +382,7 @@ text-align: center;
   top: 42%;
   left: 70%;
 }
-.relate ,.relate2 ,.relateryt ,.relateryt2 ,.relateryt3{
+.relate ,.relate1,.relate2 ,.relateryt ,.relateryt2 ,.relateryt3{
   display: none;
  }
 .roundcard{
@@ -430,14 +419,7 @@ text-align: center;
   left: 170px;
 }
 
-.container {
-  padding-left: 5px  !important;
-  padding-right: 5px !important;
-}
-.containernav{
-  padding-left: 0px !important;
-  padding-right: 0px !important;
-}
+
 .sec1img1{
   /* width: 100%; */
   }
@@ -466,6 +448,7 @@ text-align: center;
 
 }
 
+
 @media only screen and (max-width : 700px){
   .sec1img1 {
     width: 100%;
@@ -484,6 +467,7 @@ text-align: center;
   height: 158px;
 }
 }
+
 
 @media only screen and (max-width: 480px){
   [class*="col-"] {
