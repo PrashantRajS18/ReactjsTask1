@@ -1,6 +1,5 @@
 import React from "react";
 import Cardflex2 from "./Cardflex2";
-import Premium from "./Premium";
 function Stories(props) {
   return (
     <>
@@ -16,7 +15,7 @@ function Stories(props) {
             <Cardflex2
               className="flex mt-10"
               src={item.file_url}
-              width="30%"
+              premium = {item.premium}
               slug = {item.industry_details[0].slug}
               title={item.industry_details[0].name}
               slug2={item.slug}
@@ -28,7 +27,7 @@ function Stories(props) {
               author2 = {item.author_details.length > 1 ? item.author_details[1].name : " "}
                       secondname = {item.author_details.length > 1 ? "+1": " "}
             />
-            { item.premium === "1" ?  <Premium className="Montbold Premiumtag1" /> : null}
+            
           </div>
             </>
           )

@@ -1,7 +1,6 @@
 import React from "react";
 import { useRef } from "react";
 import Cards from "./Cards.";
-import Premium from "./Premium";
 import "../App.css";
 import { Link } from "react-router-dom";
 
@@ -55,7 +54,7 @@ function Slider1(props) {
               return (
                 <>
                   <div
-                    className="Cards postion "
+                    className="Cards  "
                     key={props.item.stories_list[0].feid}
                   >
                     <Cards
@@ -67,6 +66,7 @@ function Slider1(props) {
                           ? item.file_url
                           : "../imgs/slide3.1.png"
                       }
+                      premium = {item.premium}
                       width="100%"
                       slug2={item.slug}
                       cardpara="cardpara"
@@ -83,9 +83,7 @@ function Slider1(props) {
                       secondname={item.author_details.length > 1 ? "+1" : " "}
                     />
 
-                    {item.premium === "1" ? (
-                      <Premium className="Montbold Premiumtag" />
-                    ) : null}
+                    
                   </div>
                 </>
               );

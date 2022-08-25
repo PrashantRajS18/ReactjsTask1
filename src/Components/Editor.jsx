@@ -2,7 +2,6 @@ import React from "react";
 import Cards from "./Cards.";
 
 import Cardflex2 from "./Cardflex2";
-import Premium from "./Premium";
 
 import Adv3 from "../imgs/adv3.png";
 function Editor(props) {
@@ -14,10 +13,11 @@ function Editor(props) {
             <h2>{props.item.section_name}</h2>
           </div>
           <div className="col-4 mt-10">
-            <div className="postion">
+            <div >
               <Cards
               imgslug = {props.item.section_slug}
                 src={props.item.stories_list[0].file_url}
+                premium = {props.item.stories_list[0].premium}
                 wth="roundcard2"
                 width="100% !important"
                 slug={props.item.stories_list[0].industry_details[0].slug}
@@ -31,9 +31,7 @@ function Editor(props) {
                 author2 = {props.item.stories_list[0].author_details.length > 1 ? props.item.stories_list[0].author_details[1].name : " "}
                       secondname = {props.item.stories_list[0].author_details.length > 1 ? "+1": " "}
               />
-              {props.item.stories_list[0].premium === "1" ? (
-                <Premium className="Montbold Premiumtag1-1" />
-              ) : null}
+              
             </div>
             <hr className="hr mt-30"></hr>
           </div>
@@ -42,12 +40,13 @@ function Editor(props) {
               if (index === 0) return null;
               return (
                 <>
-                  <div className="postion">
+                  <div >
                     <Cardflex2
                       className="flex mt-10 "
                       src={item.file_url}
-                      width="40%"
-                      height = "100px"
+                      premium = {item.premium}
+                      
+                      
                       slug={item.industry_details[0].slug}
                       title={item.industry_details[0].name}
                       slug2={item.slug}
@@ -59,9 +58,7 @@ function Editor(props) {
                       author2 = {item.author_details.length > 1 ? item.author_details[1].name : " "}
                       secondname = {item.author_details.length > 1 ? "+1": " "}
                     />
-                    {item.premium === "1" ? (
-                      <Premium className="Montbold Premiumtag1-2" />
-                    ) : null}
+                    
                   </div>
                 </>
               );

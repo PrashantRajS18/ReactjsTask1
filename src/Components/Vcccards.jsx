@@ -1,13 +1,17 @@
 import React from 'react'
 import moment from 'moment'
 import { Link } from 'react-router-dom'
+import Premium from './Premium'
 function Vcccards(props) {
   return (
     <>
         <div className={props.className}>
     <div>
-        <div> 
+        <div className='postion'> 
             <img src={props.src}   className='Vccimg ' width={props.width} height ={props.height} alt = "cardimg" />
+            {props.premium === "1" ? (
+                   <Premium className="Montbold Premiumtag" />
+                 ) : null}
         </div>
         </div>
         <div className='Vccbody'>

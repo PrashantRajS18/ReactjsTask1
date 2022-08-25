@@ -1,7 +1,6 @@
 import React from "react";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
-import Premium from "./Premium";
 import Vcccards from "./Vcccards";
 function VccSlide(props) {
   const ref = useRef(null);
@@ -45,10 +44,11 @@ function VccSlide(props) {
     {props.item.stories_list.map((item, index) => {
             return (
               <>
-              <div className="postion">
+              <div className="">
                 <Vcccards
                   className=" Vcccard mt-10"
                   src={item.file_url}
+                  premium = {item.premium}
                   width="100%"
                   slug = {item.industry_details[0].slug}
                   title={item.industry_details[0].name}
@@ -61,9 +61,7 @@ function VccSlide(props) {
                   author2 = {item.author_details.length > 1 ? item.author_details[1].name : " "}
                       secondname = {item.author_details.length > 1 ? "+1": " "}
                 />
-                  {item.premium === "1" ? (
-                   <Premium className="Montbold Premiumtag" />
-                 ) : null}
+                 
                 </div>
               </>
             );

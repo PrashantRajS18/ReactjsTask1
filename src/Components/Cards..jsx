@@ -1,5 +1,6 @@
 import React from "react";
 import moment from "moment";
+import Premium from "./Premium";
 import { Link } from "react-router-dom";
 function Cards(props) {
   
@@ -7,13 +8,19 @@ function Cards(props) {
     <>
      <Link to={props?.slug2 || " "}> 
       <div className={props.className}>
-        <img
+      <div className="postion">
+      <img
           src={props.src}
           className={props.wth}
           width={props.width}
           height={props.height}
           alt="cardimg"
         />
+        {props.premium === "1" ? (
+                      <Premium className="Montbold Premiumtag" />
+                    ) : null}
+      </div>
+       
         <div className="crdbdy">
 
           <div className="cardtitle">

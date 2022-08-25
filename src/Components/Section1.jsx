@@ -4,7 +4,6 @@ import Cards from "../Components/Cards.";
 import { Adv } from "./Adv";
 // import Adv2 from "./imgs/adv2.png";
 import Adv3 from "../imgs/adv3.png";
-import Premium from "./Premium";
 const Section1 = (props) => {
   return (
     <>
@@ -80,18 +79,19 @@ const Section1 = (props) => {
                       className="cardflx "
                       // imgslug = {item.slug}
                       src={item.file_url}
-                      wth = "Cardimg"
-                      width ="100%"
+                      wth = "Cardsec1"
+                      // width ="100%"
+                      premium = {item.premium}
                       slug = {item.industry_details[0].slug}
                       title={item.industry_details[0].name}
                       slug2 ={item.slug}
-                      cardpara = "cardpara"
+                      cardpara = "cardpara sec1font"
                       body={item.title}
                       publish={item.publish}
                       authorslug = {item.author_details[0].slug}
                       author={item.author_details[0].name}
                     />
-                    { item.premium === "1" ?  <Premium className="Montbold Premiumtag1-3" /> : null}
+                    
                   </div>
                 </>
               );
