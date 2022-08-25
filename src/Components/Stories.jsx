@@ -19,7 +19,7 @@ function Stories(props) {
               slug = {item.industry_details[0].slug}
               title={item.industry_details[0].name}
               slug2={item.slug}
-              cardpara = "cardpara"
+              cardpara = "cardpara sec1font"
               body={item.title}
               publish={item.publish}
               authorslug = {item.author_details[0].slug}

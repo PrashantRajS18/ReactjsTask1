@@ -84,6 +84,7 @@
     }
     .sec1font{
         font-size: 25px !important;
+        -webkit-line-clamp: 3 !important;
     }
   
 }
