@@ -502,6 +502,9 @@ text-align: center;
    .mediascroller{
     grid-auto-columns: 60%;
    }
+   .Cardsec1{
+    width: 150px !important;
+}
   
   
 }

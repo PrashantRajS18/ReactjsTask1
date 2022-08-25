@@ -112,12 +112,15 @@
       }
       .Premiumtag{
         top: 68%;
-        left: 65%;
+        left: 55%;
       }
     .container-fluid{
         max-width: 100%;
     }
     .Cardeditor{
         width: 150px !important;
+    }
+    .Cardsec1{
+        width: 200px;
     }
 }
