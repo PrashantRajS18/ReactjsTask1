@@ -50,7 +50,7 @@
 @media only screen and (max-width: 1220px) {
  
   .mediascroller{
-    grid-auto-columns: 45%; 
+    grid-auto-columns: 33%; 
   }
 
 
